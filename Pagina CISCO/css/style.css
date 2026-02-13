@@ -1586,6 +1586,102 @@ body.top-search-open #side-panel-trigger { opacity: 0; }
 #header.sticky-header:not(.static-sticky) #primary-menu.sub-title > div > ul > li.mega-menu > .mega-menu-content { top: 58px; }
 
 
+/* ================= NEWS SECTION ================= */
+
+.news-section {
+    width: 100%;
+}
+
+.news-section h2 {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.news-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.news-table thead th {
+    text-align: left;
+    padding: 22px 0;
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: 2px solid #ccc;
+}
+
+.news-table tbody tr {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.news-table td {
+    padding: 22px 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.date-column {
+    width: 120px;
+    font-weight: 500;
+    color: #333;
+}
+
+.news-table a {
+    color: #1e5bb8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.news-table a:hover {
+    text-decoration: underline;
+}
+/* ================= NEWS SECTION ================= */
+
+
+/* ================= DATES SECTION ================= */
+
+.dates-section {
+    margin-top: 40px;
+}
+
+.dates-table {
+    margin-top: 30px;
+    border-top: 2px solid #cfd3d6;
+}
+
+.dates-header,
+.dates-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    border-bottom: 1px solid #cfd3d6;
+}
+
+.dates-header {
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+}
+
+.dates-row {
+    font-size: 24px;
+}
+
+.col-event {
+    width: 40%;
+}
+
+.col-date {
+    width: 60%;
+}
+
+.pink-date {
+    color: #e83e8c; /* rosa elegante */
+    font-weight: 500;
+}
+/* ================= DATES SECTION ================= */
+
+
 
 /* ----------------------------------------------------------------
 	Side Header
