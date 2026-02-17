@@ -1739,72 +1739,131 @@ body.top-search-open #side-panel-trigger { opacity: 0; }
 /* ================= IMPORTANT DATES ================= */
 
 
-/* ================= CALL FOR PAPERS ================= */
 
-.call-section {
-    margin-top: 80px;
-    padding: 0 10%;
+/* ================= call-for-papers ================= */ 
+.call-for-papers { 
+	margin-top: 80px; 
+} 
+
+.subsection-title { 
+	margin-top: 40px; 
+	font-size: 24px; 
+	font-weight: 600; 
+} 
+
+.topics-list { 
+	margin-left: 40px; 
+} 
+
+.topics-list li {
+    font-size: 20px;   /* cambia este número al tamaño que quieras */
 }
 
-/* Título principal */
-.section-title {
-    font-size: 50px;
-    font-weight: 300;
-    margin-bottom: 30px;
+
+.submission-box { 
+	padding: 20px; 
+	border-radius: 8px; 
+	margin: 20px 0; 
+} 
+
+.info-box { 
+	background-color: #e8f2ff; 
+	border: 1px solid #2c6ed5; 
+} 
+.warning-box { 
+	background-color: #ffeaea; 
+	border: 1px solid #d62828; 
+} 
+
+/* ================= call-for-papers ================= */
+
+/* ===============================
+   Camera Ready Guidelines
+   =============================== */
+
+.camera-ready {
+    margin-top: 60px;
+    font-size: 16px;
+    line-height: 1.7;
     color: #333;
 }
 
-/* Subtítulos */
-.subsection-title {
-    font-size: 28px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    font-weight: 600;
-}
-
-/* Párrafos */
-.call-content p {
-    font-size: 20px;
-    line-height: 1.7;
-    margin-bottom: 25px;
-}
-
-/* Lista con puntos (NO columnas) */
-.topics-list {
-    font-size: 20px;
-    line-height: 1.8;
+.camera-ready-list {
+    margin-top: 30px;
     padding-left: 25px;
-    list-style-type: disc;
 }
 
-.topics-list li {
+.camera-ready-list > li {
+    margin-bottom: 18px;
+}
+
+.camera-ready-list li strong {
+    color: #b30000; /* rojo institucional */
+}
+
+.camera-ready-list ul {
+    margin-top: 10px;
     margin-bottom: 10px;
+    padding-left: 20px;
 }
 
-/* Cajas informativas */
-.info-box {
-    padding: 25px;
-    margin: 30px 0;
-    border-radius: 8px;
-    font-size: 20px;
+.camera-ready-list ul li {
+    list-style-type: disc;
+    margin-bottom: 6px;
+    color: #555;
 }
 
-/* Caja azul */
-.blue-box {
-    background: #eef5ff;
-    border: 2px solid #2f6fd6;
-    color: #1d4f9e;
+/* Links */
+.camera-ready a {
+    color: #b30000;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-/* Caja roja */
-.red-box {
-    background: #ffecec;
-    border: 2px solid #e63c3c;
-    color: #b21f2d;
+.camera-ready a:hover {
+    text-decoration: underline;
 }
 
-/* ================= CALL FOR PAPERS ================= */
+/* Texto especial */
+.copyright-text,
+.conference-text {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-style: italic;
+    color: #555;
+}
 
+/* Sección de archivos */
+.submission-files {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.submission-files li {
+    margin-bottom: 8px;
+    list-style-type: square;
+}
+
+/* Subtítulos */
+.camera-ready .subsection-title {
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #111;
+    border-bottom: 2px solid #b30000;
+    padding-bottom: 6px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .camera-ready {
+        font-size: 15px;
+    }
+
+    .camera-ready .subsection-title {
+        font-size: 20px;
+    }
+}
 
 
 
