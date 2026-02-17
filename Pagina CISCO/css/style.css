@@ -1682,6 +1682,132 @@ body.top-search-open #side-panel-trigger { opacity: 0; }
 /* ================= DATES SECTION ================= */
 
 
+/* ================= IMPORTANT DATES ================= */
+
+.important-dates {
+    margin-top: 40px;
+}
+
+.important-title {
+    font-size: 60px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.dates-table {
+    border-top: 2px solid #cfd3d6;
+}
+
+.dates-header {
+    display: flex;
+    padding: 25px 0;
+    border-bottom: 1px solid #cfd3d6;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+}
+
+.dates-row {
+    display: flex;
+    align-items: center;
+    padding: 35px 0;
+    border-bottom: 1px solid #cfd3d6;
+    font-size: 28px;
+}
+
+.col-event {
+    width: 40%;
+    font-weight: 700;
+    color: #555;
+}
+
+.col-date {
+    width: 60%;
+}
+
+.old-date {
+    text-decoration: line-through;
+    color: #444;
+    margin-right: 15px;
+}
+
+.new-date {
+    color: #e63c84;
+    font-weight: 500;
+}
+/* ================= IMPORTANT DATES ================= */
+
+
+/* ================= CALL FOR PAPERS ================= */
+
+.call-section {
+    margin-top: 80px;
+    padding: 0 10%;
+}
+
+/* Título principal */
+.section-title {
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Subtítulos */
+.subsection-title {
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Párrafos */
+.call-content p {
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Lista con puntos (NO columnas) */
+.topics-list {
+    font-size: 20px;
+    line-height: 1.8;
+    padding-left: 25px;
+    list-style-type: disc;
+}
+
+.topics-list li {
+    margin-bottom: 10px;
+}
+
+/* Cajas informativas */
+.info-box {
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+/* Caja azul */
+.blue-box {
+    background: #eef5ff;
+    border: 2px solid #2f6fd6;
+    color: #1d4f9e;
+}
+
+/* Caja roja */
+.red-box {
+    background: #ffecec;
+    border: 2px solid #e63c3c;
+    color: #b21f2d;
+}
+
+/* ================= CALL FOR PAPERS ================= */
+
+
+
+
 
 /* ----------------------------------------------------------------
 	Side Header
