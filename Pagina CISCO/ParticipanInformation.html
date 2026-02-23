@@ -16,21 +16,47 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
     <link rel="stylesheet" href="css/colors.css" type="text/css" />
 
+    <link rel="stylesheet" href="css/stylesIndex.css" type="text/css" />
+
     <link rel="stylesheet" href="css/responsive.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
    		
-        <!--[if lte IE 8]><script src="js/ie6/warning.js"></script><script>window.onload=function(){e("js/ie6/")}</script><![endif]-->
+    <!--[if lte IE 8]><script src="js/ie6/warning.js"></script><script>window.onload=function(){e("js/ie6/")}</script><![endif]-->
 
     <!-- External JavaScripts
     ============================================= -->
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/plugins.js"></script>
 
+    <!-- Favicon -->
     <link href="images/AulaC/logo_CISCObn.svg" rel="icon"/>
 
     <!-- Titulo
     ============================================= -->
 	<title>AMW 2026</title>
+
+    <style>
+        /* Ajustes ligeros para que se vea prolijo con tu template */
+        .amw-section { margin-top: 25px; }
+        .amw-lead { font-size: 15px; line-height: 1.7; }
+        .amw-table th, .amw-table td { vertical-align: middle !important; }
+        .amw-price { font-weight: 700; color: #ff2d7a; } /* similar al magenta de tu captura */
+        .amw-note { font-size: 13px; color: #666; }
+        .amw-box {
+            border: 1px solid #d9edf7;
+            background: #f4fbff;
+            padding: 18px;
+            border-radius: 8px;
+        }
+        .amw-box h4 { margin-top: 0; }
+        .amw-highlight {
+            background: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 700;
+        }
+        .amw-kv strong { display: inline-block; min-width: 120px; }
+    </style>
 
 </head>
 
@@ -52,16 +78,10 @@
                 <div id="logo" class="divcenter">
                 	
                     <a href="http://www.unam.mx" class="standard-logo1" data-dark-logo="images/logos/unam2.png"><img class="divcenter2" src="images/logos/unam2.png" alt="UNAM" title="UNAM"></a>
-                    
-                    
                     <a href="http://www.ingenieria.unam.mx" class="standard-logo2" data-dark-logo="images/logos/fi01.png"><img class="divcenter3" src="images/logos/fi01.png" alt="Facultad de Ingeniería" title="Facultad de Ingeniería"></a>
-                    
                      <a href="#" class="standard-logo3" data-dark-logo="images/AulaC/CiscoL.png"><img  src="images/AulaC/logo_CISCO.svg" alt="Logo Cisco" title="Logo Cisco"></a>
-                     
                      <a href="http://www.ingenieria.unam.mx" class="standard-logo4" data-dark-logo="images/logos/fi02.png"><img  src="images/logos/fi02.png" alt="Facultad de Ingeniería" title="Facultad de Ingeniería"></a>
-                     
                      <a href="#" class="standard-logo5" data-dark-logo="images/AulaC/CiscoL.png"><img  src="images/AulaC/logo_CISCO.svg" alt="Logo Cisco" title="Logo Cisco"></a>
-                     
                      <a href="http://www.ingenieria.unam.mx" class="standard-logo6" data-dark-logo="images/logos/fi03.png"><img  src="images/logos/fi03.png" alt="Facultad de Ingeniería" title="Facultad de Ingeniería"></a>
                      
                </div><!-- #logo end -->
@@ -105,10 +125,10 @@
 
                             <li><a href="#"><div>Participan Information<img src="images/icons/mainsubmenured2.png" alt="submenu"></div></a>
                             	<ul>
-                                    <li><a href="algoDay.html"><div>Fees</div></a></li>
-                                    <li><a href="algoDay.html"><div>Registration</div></a></li>
-                                    <li><a href="introduccion.html"><div>Venue</div></a></li>
-                                    <li><a href="inauguracion.html"><div>Accomidation</div></a></li>
+                                    <li><a href="#fees"><div>Fees</div></a></li>
+                                    <li><a href="#registration"><div>Registration</div></a></li>
+                                    <li><a href="Venue.html"><div>Venue</div></a></li>
+                                    <li><a href="Accomidation.html"><div>Accomidation</div></a></li>
                                 </ul>
                             </li>
 
@@ -130,21 +150,13 @@
 
             <div class="container clearfix">
                 <h1>Participan Information</h1>
-                <ol class="breadcrumb">
-                    <!--<li><a href="#">Programas Académicos</a></li>
-                    <li><a href="#">Licenciaturas</a></li>
-                    <li class="active">Ingeniería Civil</li>-->
-                </ol>
+                <ol class="breadcrumb"></ol>
             </div>
 
         </section><!-- Titulo de pagina end -->
 
-<!--Encabezado y titulos, hasta aqui-->
-
-
-                <!-- Contenido
+        <!-- Contenido
         ============================================= -->
-        
         <section id="content">
 
             <div class="content-wrap">
@@ -153,122 +165,170 @@
 
                     <div class="single-post nobottommargin">
 
+                        <!-- Post
+                        ============================================= -->
                         <div class="entry clearfix">
 
+                            <!-- Contenido
+                            ============================================= -->
                             <div class="entry-content notopmargin">
 
                                 <!-- =========================
-                                    VENUE
+                                     FEES
                                 ========================== -->
-                                <div class="fancy-title title-dotted-border title-center">
-                                    <h2>Venue</h2>
-                                    <span>UNAM, Ciudad Universitaria</span>
+                                <div class="fancy-title title-dotted-border title-center amw-section" id="fees">
+                                    <h3>Fees</h3>
                                 </div>
 
-                                <p>
-                                    AMW 2024 will take place in the <strong>National Autonomous University of Mexico</strong> campus
-                                    <strong>Ciudad Universitaria ("CU")</strong>, in Mexico City.
+                                <p class="amw-lead">
+                                    A continuación se muestran las cuotas de registro (USD). Incluye categorías <strong>In-person</strong> y <strong>Online</strong>.
+                                    <span class="amw-note">*En tu sitio puedes actualizar las fechas (“Normal / Late”) según AMW 2026.</span>
                                 </p>
 
-                                <p>
-                                    UNAM is a public university and one of the largest universities on the continent. Three Nobel laureates
-                                     and most of Mexico’s modern-day presidents are among its former students. UNAM conducts 25% of Mexico’s 
-                                     scientific research and has presence all across the country with satellite campuses, observatories and 
-                                     research centres.
-                                </p>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered amw-table">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 18%;">Modalidad</th>
+                                                <th>Tipo</th>
+                                                <th style="width: 18%;">Normal<br><span class="amw-note">(until September 22nd, 2024)</span></th>
+                                                <th style="width: 18%;">Late</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="4"><strong>In-person</strong></td>
+                                                <td><strong>Workshop + School</strong><sup>1</sup></td>
+                                                <td class="amw-price">$ 1,250 USD</td>
+                                                <td class="amw-price">$ 1,400 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Workshop</strong><sup>1</sup></td>
+                                                <td class="amw-price">$ 850 USD</td>
+                                                <td class="amw-price">$ 1,000 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>School</strong><sup>1</sup></td>
+                                                <td class="amw-price">$ 450 USD</td>
+                                                <td class="amw-price">$ 600 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>One-day pass</strong><sup>2</sup></td>
+                                                <td class="amw-price">$ 125 USD</td>
+                                                <td class="amw-price">$ 125 USD</td>
+                                            </tr>
 
-                                <p>
-                                    <a href="https://en.wikipedia.org/wiki/Ciudad_Universitaria,_Mexico_City"
-                                        class="link-workshop"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        <strong>Ciudad Universitaria</strong>
-                                    </a>
-                                    is UNAM main campus. It was designed by some of Mexico’s best-known 
-                                    architects and artists of the 20th century. It was named World Heritage Site by UNESCO in 2007. Visits to 
-                                    Ciudad Universitaria often include the museums, the open areas, and the famous sculpture space, all part 
-                                    of the 
-                                    <a href="https://mexicocity.cdmx.gob.mx/tag/unam-cc/"
-                                        class="link-workshop"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        UNAM Cultural Center.
-                                    </a>
-                                     The campus also hosted the main events of the 
-                                    <a href="https://en.wikipedia.org/wiki/1968_Summer_Olympics"
-                                        class="link-workshop"
-                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        1968 Summer Olympics.
-                                    </a>
-                                </p>
+                                            <tr>
+                                                <td rowspan="2"><strong>Online</strong><sup>3</sup></td>
+                                                <td><strong>Workshop</strong></td>
+                                                <td class="amw-price">$ 15 USD</td>
+                                                <td class="amw-price">$ 15 USD</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>1x School tutorial</strong></td>
+                                                <td class="amw-price">$ 12 USD</td>
+                                                <td class="amw-price">$ 12 USD</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
 
-                                <hr>
+                                <div class="amw-section">
+                                    <p class="amw-note"><sup>1</sup> <strong>The workshop and school registration fees include:</strong></p>
+                                    <ul class="amw-note">
+                                        <li><strong>School:</strong> 2 lunches + 1 dinner + 1 tacos night.</li>
+                                        <li><strong>Workshop:</strong> 3 lunches + 1 dinner + 1 special dinner.</li>
+                                        <li>Coffee breaks + social &amp; cultural activities, with two-way transportation provided as needed.</li>
+                                        <li>Certificate of participation.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="amw-section">
+                                    <p class="amw-note"><sup>2</sup> <strong>The one-day pass:</strong></p>
+                                    <ul class="amw-note">
+                                        <li>includes coffee breaks, lunch for the selected day and a certificate of participation.</li>
+                                        <li>does not include dinners or night social activities.</li>
+                                        <li>is not cumulative. <span class="amw-highlight">Each person may purchase 1 pass maximum.</span></li>
+                                        <li>must be purchased via <li><a href="#bank-transfer"><div>National Bank Transfer</div></a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="amw-section">
+                                    <p class="amw-note"><sup>3</sup> <strong>The registration fee for online attendance includes:</strong></p>
+                                    <ul class="amw-note">
+                                        <li><strong>School tutorial:</strong> online access to the 3-hour course and the teaching materials.</li>
+                                        <li><strong>Workshop:</strong> online access to: the AMW scientific program, keynotes and workshop sessions.</li>
+                                        <li>Certificate of participation.</li>
+                                    </ul>
+                                </div>
 
                                 <!-- =========================
-                                    ROOMS
+                                     REGISTRATION PROCEDURE
                                 ========================== -->
-                                <div class="fancy-title title-dotted-border title-center">
-                                    <h2>Rooms</h2>
+                                <div class="fancy-title title-dotted-border title-center amw-section" id="registration">
+                                    <h3>Registration Procedure</h3>
                                 </div>
 
-                                <p>
-                                    The workshop and the school’s main activities will take place in the
-                                    <strong>Anexo de Ingeniería</strong> area.
+                                <ol class="amw-lead">
+                                    <li>
+                                        Select the appropriate payment method:
+                                        <ul>
+                                            <li><a href="https://www.paypal.com/ncp/payment/5BMQ64FYER2ME" target="_blank">Paypal / Credit Card</a> <strong>(participants outside Mexico)</strong></li>
+                                            <li><a href="#bank-transfer">National Bank Transfer</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Fill in the <a href="https://docs.google.com/forms/d/e/1FAIpQLSewP1TnI6kWHHqi4BhkWerzBQFGgd9sQ-soIiSCbzKyeG1auw/viewform" target="_blank"><strong>Registration Form</strong></a> and
+                                        <strong>upload your proof of payment</strong>.
+                                    </li>
+                                    <li>
+                                        Answer the short <a href="https://docs.google.com/forms/d/e/1FAIpQLSekJyCFrz2sgVUKvMq_6zPaHU3gWr4fGPWxcJ13rRjjJ0Csgg/viewform" target="_blank"><strong>DEI Survey</strong></a>.
+                                    </li>
+                                </ol>
+
+                                <p class="amw-lead">
+                                    You will receive a confirmation email sent by the organization committee.
+                                    <br>
+                                    In case of problems or questions, <a href="index.html" target="_blank">contact us</a>.
                                 </p>
 
-                                <ul>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Auditorium+Ra%C3%BAl+J.+Marsal/@19.3284988,-99.1816213,17z/data=!4m6!3m5!1s0x85ce0004fa5e2251:0x5b7f2df6637d23ab!8m2!3d19.3284988!4d-99.18116!16s%2Fg%2F1hdzrp1wp?coh=219816&entry=tts&g_ep=EgoyMDI0MDgxMS4wKgBIAVAD"
-                                            class="link-workshop"
-                                            target="_blank"
-                                            rel="noopener noreferrer">
-                                            <strong>Auditorium "Raúl J. Marsal"</strong>
-                                        </a>
-                                        , Building T   
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Building+Luis+G.+Vald%C3%A9s+Vallejo/@19.3279618,-99.1822675,20.66z/data=!4m6!3m5!1s0x85ce000453108fe9:0xefb9ac808d9135b2!8m2!3d19.3279478!4d-99.1820946!16s%2Fg%2F1hd_9bwn9?coh=219816&entry=tts&g_ep=EgoyMDI0MDgxMS4wKgBIAVAD"
-                                            class="link-workshop"
-                                            target="_blank"
-                                            rel="noopener noreferrer">
-                                            <strong>Aula "Cisco" (Q218)</strong>
-                                        </a>
-                                        , Building Q, 2nd floor
-                                    </li>
-                                </ul>
-
-                                <div class="center" style="margin-top:30px;">
-                                    <img src="images/mapas/mapa_general.png" class="img-responsive" alt="Mapa General UNAM">
-                                    <p><em>Anexo de Ingeniería, Ciudad Universitaria, UNAM</em></p>
+                                <div class="amw-box amw-section">
+                                    <h4><i class="icon-info-sign"></i> Cancellation Policy</h4>
+                                    <p class="nobottommargin">
+                                        In case of any cancellation or non-attendance, the <strong>registration fee are not refundable</strong>.
+                                    </p>
                                 </div>
-
-                                <div class="center" style="margin-top:40px;">
-                                    <img src="images/mapas/mapa_anexo.png" class="img-responsive" alt="Mapa Anexo Ingeniería">
-                                    <p><em>Anexo de Ingeniería Buildings (Conjunto Sur)</em></p>
-                                </div>
-
-                                <hr>
 
                                 <!-- =========================
-                                    MAP
+                                     BANK TRANSFER
                                 ========================== -->
-                                <div class="fancy-title title-dotted-border title-center">
-                                    <h2>Map</h2>
-                                    <span>Point of Interest</span>
+                                <div class="fancy-title title-dotted-border title-center amw-section" id="bank-transfer">
+                                    <h3>Bank Transfer</h3>
                                 </div>
 
-                                <div class="center">
-                                    <iframe 
-                                        src="https://www.google.com/maps/d/embed?mid=1BXYofSXDnofdEGwyF9_YxXNpJb5o5oM&ehbc=2E312F" 
-                                        width="640" 
-                                        height="480">
-                                    </iframe>
+                                <p class="amw-note">National Institutions/Participants only</p>
+
+                                <div class="amw-box">
+                                    <p class="amw-kv"><strong>Bank:</strong> BBVA BANCOMER</p>
+                                    <p class="amw-kv"><strong>Account:</strong> 0113417697</p>
+                                    <p class="amw-kv"><strong>CLABE:</strong> 012180001134176979</p>
+                                    <p class="amw-kv nobottommargin"><strong>Beneficiary:</strong> LATTE MARKETING S DE RL DE CV</p>
                                 </div>
 
-                            </div>
+                                <div class="amw-box amw-section">
+                                    <h4><i class="icon-info-sign"></i> To calculate the registration fee in Mexican pesos</h4>
+                                    <ol class="amw-lead" style="margin-bottom:0;">
+                                        <li>
+                                            Visit the <a href="https://www.banxico.org.mx/tipcamb/tipCamMIAction.do" target="_blank"><strong>Bank of Mexico official USD to MXN exchange rate page</strong></a>.
+                                        </li>
+                                        <li>
+                                            Use the first value in the <span class="amw-highlight">"Para pagos"</span> column as exchange rate.
+                                        </li>
+                                    </ol>
+                                </div>
 
-                        </div>
+                            </div><!-- .entry-content end -->
+                        </div><!-- .entry end -->
 
                     </div>
 
@@ -276,13 +336,7 @@
 
             </div>
 
-        </section>
-
-        
-        <!-- #contenido end -->
-
-
-
+        </section><!-- #contenido end -->
 
         <!-- Footer
         ============================================= -->
@@ -298,16 +352,11 @@
 
                         <div class="widget clearfix">
 
-                           
-
                            <div class="col_one_third">
                            		 <img src="images/logofooter.png" alt="" class="footer-logo">  
                                   <div style="padding-left:40px">
                                  	<button type="submit" id="quick-contact-form-submit" name="quick-contact-form-submit" class="btn-contacto" value="submit">Contacto</button>
                                  </div>  
-                                 
-                                 	
-								
                              </div>
                                 
                             <div class="col_two_third col_last">
@@ -337,12 +386,7 @@
                                         <i class="icon-youtube"></i>
                                         <i class="icon-youtube"></i>
                         			</a>
-                                    
-                                    
-                                    
-                                   
                            </div>
-                                
 
                         </div>
 
@@ -360,12 +404,6 @@
                                     </ul>
                                 </div>
                         </div>
-                        
-
-                        
-
-                        
-
                     </div>
 
                 </div><!-- .footer-widgets-wrap end -->
@@ -377,24 +415,17 @@
             <div id="copyrights2">
 
                 <div class="container clearfix">
-
-                   
-                        <div class="copyrights2">
-                            Todos los derechos reservados Copyrights &copy; 2023 /
-                            <a href="http://www.ingenieria.unam.mx">Facultad de Ingeniería</a>/<a href="http://www.unam.mx">UNAM</a>/
-                        </div>
-                       
-                   
-
-                    
-
+                    <div class="copyrights2">
+                        Todos los derechos reservados Copyrights &copy; 2023 /
+                        <a href="http://www.ingenieria.unam.mx">Facultad de Ingeniería</a>/<a href="http://www.unam.mx">UNAM</a>/
+                    </div>
                 </div>
 
             </div><!-- #copyrights end -->
 
         </footer><!-- #footer end -->
 
-    </div><!-- #wrapper end 'images/footer-bg.jpg'-->
+    </div><!-- #wrapper end -->
 
     <!-- Go To Top
     ============================================= -->
@@ -403,8 +434,6 @@
     <!-- Footer Scripts
     ============================================= -->
     <script type="text/javascript" src="js/functions.js"></script>
-
-
 
 </body>
 </html>
