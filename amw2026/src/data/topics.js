@@ -1,17 +1,52 @@
 export const cfpData = {
-    description: "AMW 2026 invites submissions of original research papers, as well as reports on 'work in progress'. We seek contributions on all aspects of data management foundations.",
+    description: "We solicit submissions in the following areas of data management.Submissions addressing foundational aspects and (short) papers illustrating applications of foundational results in real-world contexts are particularly welcome.",
     categories: [
         {
-            title: "Foundations",
-            topics: ["Query languages", "Data models", "Complexity and performance", "Incomplete and inconsistent data"]
+            title: "Topics",
+            topics: [   "Approximate and probabilistic query answering",
+                        "Data analytics",
+                        "Data exchange and integration",
+                        "Data exploration",
+                        "Data mining",
+                        "Data modelling",
+                        "Data privacy, security, and blockchain",
+                        "Data provenance",
+                        "Data streams",
+                        "Data visualization",
+                        "Data warehousing",
+                        "Database benchmarking",
+                        "Database concurrency and transactions",
+                        "Database storage and indexing",
+                        "Distributed and parallel databases",
+                        "Domain-specific databases",
+                        "Ethics of data science",
+                        "Graph data management",
+                        "Incompleteness, inconsistency, and uncertainty in databases",
+                        "Information extraction",
+                        "Information retrieval",
+                        "Knowledge representation",
+                        "Logic and databases",
+                        "Machine learning and databases",
+                        "Model theory and databases",
+                        "Physical design",
+                        "Query languages",
+                        "Query processing and optimization",
+                        "Semantic Web",
+                        "Social networks",
+                        "Spatial/temporal data"
+                    ]
         },
         {
-            title: "Modern Data",
-            topics: ["Graph databases", "Web data management", "Data streams", "Distributed data"]
+            
+            title: "Submissions",
+            topics: [   "This year submissions are requested in the CEURART format since this is the camera-ready required format. However, <strong>submissions following the previous LNCS format will still be accepted.</strong>",
+                        "At least one author of each accepted paper must attend the workshop to present the work."
+                    ]
+
         },
         {
-            title: "Integration & Quality",
-            topics: ["Data integration", "Ontology-based data management", "Data cleaning", "Provenance"]
+            title: "We invite two types of submissions:",
+            topics: ["<strong>Short papers</strong> (up to <strong>4 pages</strong>) containing original ongoing research or recently published results.", "Extended abstracts (up to 10 pages) presenting original research."]
         },
         {
             title: "Emerging Trends",

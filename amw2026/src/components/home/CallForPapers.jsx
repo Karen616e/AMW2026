@@ -7,6 +7,7 @@ const CallForPapers = () => {
         <div className="flex flex-col lg:flex-row gap-16">
 
         {/* Columna de Texto */}
+        
         <div className="lg:w-1/3">
         <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-6">
         Call for Papers
@@ -41,7 +42,7 @@ const CallForPapers = () => {
             {category.topics.map((topic, tidx) => (
                 <li key={tidx} className="text-slate-600 text-sm flex items-start gap-2">
                 <span className="text-blue-400">•</span>
-                {topic}
+                <span dangerouslySetInnerHTML={{ __html: topic }} />
                 </li>
             ))}
             </ul>

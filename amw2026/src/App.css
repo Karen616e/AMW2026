@@ -33,6 +33,13 @@
   }
 }
 
+.highlight-text {
+  background-color: #efe2c6;   /* beige */
+  color: #1f4f73;              /* azul oscuro */
+  font-weight: 700;
+  padding: 4px 6px;
+}
+
 .card {
   padding: 2em;
 }
