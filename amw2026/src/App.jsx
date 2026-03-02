@@ -1,5 +1,6 @@
 import Navbar from './components/layout/Navbar';
 import Hero from './components/home/Hero';
+import About from './components/home/About';
 import CallForPapers from './components/home/CallForPapers';
 import Submission from './components/home/Submission';
 import DatesTable from './components/home/DatesTable';

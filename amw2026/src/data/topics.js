@@ -46,7 +46,7 @@ export const cfpData = {
         },
         {
             title: "We invite two types of submissions:",
-            topics: ["<strong>Short papers</strong> (up to <strong>4 pages</strong>) containing original ongoing research or recently published results.", "Extended abstracts (up to 10 pages) presenting original research."]
+            topics: ["<strong>Short papers</strong> (up to <strong>4 pages</strong>) containing original ongoing research or recently published results.", "<strong>Extended abstracts</strong> (up to <strong>10 pages</strong>) presenting original research."]
         },
         {
             title: "Emerging Trends",

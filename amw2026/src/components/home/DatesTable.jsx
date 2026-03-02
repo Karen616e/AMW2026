@@ -13,7 +13,7 @@ const DatesTable = () => {
         {/* Header - Hidden on Mobile */}
         <div className="hidden md:grid grid-cols-4 bg-slate-50 border-b border-slate-200 p-4 text-sm font-semibold text-slate-600">
         <div className="col-span-2">Event</div>
-        <div>Date</div>
+        <div>DEADLINE</div>
         <div className="text-right">Status</div>
         </div>
 
