@@ -14,11 +14,9 @@ const Hero = () => {
         Foundations of Data Management • May 2026 • CDMX, Mexico
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-        <button className="bg-white text-blue-900 px-8 py-3 rounded-full font-bold hover:bg-blue-50 transition-all shadow-lg">
-        Call for Papers
-        </button>
-        <button className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white/10 transition-all">
-        Important Dates
+        <button className="bg-white text-blue-900 px-8 py-3 rounded-full font-bold hover:bg-blue-50 transition-all shadow-lg"
+        onClick={() => window.location.href = "https://ceur-ws.org/Vol-3954/"}>
+        Workshop Proceedings
         </button>
         </div>
         </div>

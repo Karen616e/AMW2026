@@ -15,9 +15,11 @@ const Navbar = () => {
 
   const menuItems = [
     { name: 'Home', href: '#home' },
+    { name: 'About', href: '#about'},
     { name: 'Topics', href: '#call-for-papers' },
     { name: 'Submission', href: '#submission' },
     { name: 'Dates', href: '#dates' },
+    { name: 'Contact', href: '#contact'},
     { name: 'Registration', href: '#registration' },
     { name: 'Organization', href: '#organization' },
     { name: 'Grants', href: '#grants' },

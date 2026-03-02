@@ -1,9 +1,11 @@
 import Navbar from './components/layout/Navbar';
 import Hero from './components/home/Hero';
+import DEIDisclaimer from './components/home/DEIDisclaimer';
 import About from './components/home/About';
 import CallForPapers from './components/home/CallForPapers';
 import Submission from './components/home/Submission';
 import DatesTable from './components/home/DatesTable';
+import Contact from './components/home/Contact';
 import Registration from './components/home/Registration';
 import Committee from './components/home/Committee';
 import Venue from './components/home/Venue';
@@ -25,7 +27,10 @@ function App() {
         </div>
 
         {/* El flujo lógico de un sitio de Workshop */}
+        <DEIDisclaimer />
+        <About/>
         <CallForPapers />
+        <Contact />
         <Submission />
         <DatesTable />
         <Registration />

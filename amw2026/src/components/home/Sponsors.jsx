@@ -1,8 +1,10 @@
 const Sponsors = () => {
   const sponsors = [
-    { name: "UNAM", logo: "https://via.placeholder.com/150x80?text=UNAM" },
-    { name: "Sede 2026", logo: "https://via.placeholder.com/150x80?text=Sede" },
-    { name: "Funding Org", logo: "https://via.placeholder.com/150x80?text=Sponsor" }
+    { name: "Very Large Data Bases", logo: "https://www.vldb.org/images/logo.gif", url: "https://www.vldb.org/" },
+    { name: "Ambassade de France au Mexique", logo: "https://amw2024.github.io/uploads/logos/ambassade-france.svg", url: "https://mx.ambafrance.org/" },
+    { name: "ACM", logo: "https://www.acm.org/binaries/content/gallery/global/top-menu/acm_logo_tablet.svg", url: "https://www.acm.org/" },
+    { name: "CPE Lyon", logo: "https://www.cpe.fr/wp-content/themes/acti-main/img/logo-cpe-bleu.svg", url: "https://www.cpe.fr/" },
+    { name: "CEUR", logo: "https://amw2024.github.io/uploads/logos/ceur-ws.png", url: "https://ceur-ws.org/" }
   ];
 
   return (
@@ -13,7 +15,13 @@ const Sponsors = () => {
         </p>
         <div className="flex flex-wrap justify-center items-center gap-12 opacity-60 hover:opacity-100 transition-opacity">
           {sponsors.map((s, i) => (
-            <img key={i} src={s.logo} alt={s.name} className="h-12 grayscale hover:grayscale-0 transition-all" />
+            <a key={i} href={s.url} target="_blank" rel="noopener noreferrer">
+              <img
+                src={s.logo}
+                alt={s.name}
+                className="h-12 grayscale hover:grayscale-0 transition-all"
+              />
+            </a>
           ))}
         </div>
       </div>

@@ -1,36 +1,33 @@
 const About = () => {
   return (
-    <section className="bg-white py-20 px-4">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-center text-4xl md:text-6xl font-light text-slate-700 mb-10">
-          DEI Disclaimer
+    <section id="about" className="py-20 px-4 bg-slate-50">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-6">
+          About AMW
         </h2>
-
-        <p className="text-slate-700 text-lg md:text-xl leading-relaxed">
-          The <strong>AMW</strong> community believes that diversity and culture of support
-          encourage retention and attraction of talent, promote diversity of thought and
-          perspective, and help make the scientific community more flexible and responsive in
-          times of change. For these reasons, AMW 2024 participates in the{" "}
-          <a
-            href="https://dbdni.github.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-700 hover:underline"
-          >
-            Database Community Diversity, Equity and Inclusion (DEI) initiative
-          </a>{" "}
-          aiming to guide researchers in our community to adopt a more inclusive mindset. For
-          more information see the{" "}
-          <a
-            href="https://amw.mx/dei"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-700 hover:underline"
-          >
-            AMW 2024 DEI statement
-          </a>
-          .
+        <p className="text-lg text-slate-600 leading-relaxed mb-8">
+          Since 2006, the <strong>Alberto Mendelzon International Workshop</strong> on Foundations of Data Management (AMW) brings together top researchers from all over the world, creating the opportunity to discuss and spread research results around the areas of Data Management and the Web.
         </p>
+        <p className="text-lg text-slate-600 leading-relaxed mb-8">
+          The co-located <strong>AMW Summer School</strong> provides an opportunity for Latin American students (graduate and undergraduate), researchers, and practitioners, to interact with top researchers from all over the world, promoting collaboration, learning, and teaching in a friendly environment.
+        </p>
+        <p className="text-lg text-slate-600 leading-relaxed mb-8">
+          AMW is a way to honour the memory of{" "}
+          <a
+            href="https://en.wikipedia.org/wiki/Alberto_O._Mendelzon"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-700"
+          >
+            Alberto Mendelzon
+          </a>
+          , by promoting research ties with Latin America.
+        </p>
+        <img
+          src="/src/images/alberto-mendelzon.webp"
+          alt="Alberto Mendelzon"
+          className="mx-auto rounded-full max-w-xs mb-6"
+        />
       </div>
     </section>
   );
