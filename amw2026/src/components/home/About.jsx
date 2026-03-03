@@ -3,16 +3,31 @@ const About = () => {
     <section id="about" className="py-20 px-4 bg-slate-50">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-6">
-          About AMW
+          About MCyRA
         </h2>
         <p className="text-lg text-slate-600 leading-relaxed mb-8">
-          Since 2006, the <strong>Alberto Mendelzon International Workshop</strong> on Foundations of Data Management (AMW) brings together top researchers from all over the world, creating the opportunity to discuss and spread research results around the areas of Data Management and the Web.
+          Following the legacy of the <strong>Alberto Mendelzon International Workshop on Foundations of Data Management (AMW)</strong>, 
+          the <strong>Mexican Conference on Cybersecurity Research and Applications (MCyRA 2026)</strong> continues the tradition of bringing 
+          together leading researchers, practitioners, and students from around the world to exchange knowledge and foster 
+          collaboration in the realm of cybersecurity.
         </p>
+        
         <p className="text-lg text-slate-600 leading-relaxed mb-8">
-          The co-located <strong>AMW Summer School</strong> provides an opportunity for Latin American students (graduate and undergraduate), researchers, and practitioners, to interact with top researchers from all over the world, promoting collaboration, learning, and teaching in a friendly environment.
+          While AMW has been an essential platform for discussing advancements in data management and the web, 
+          MCyRA shifts the focus to the dynamic and rapidly evolving field of cybersecurity, aiming to address 
+          current challenges and future directions in protecting digital infrastructure and applications.
         </p>
+
         <p className="text-lg text-slate-600 leading-relaxed mb-8">
-          AMW is a way to honour the memory of{" "}
+          The co-located MCyRA Summer School, much like its AMW counterpart, offers an invaluable opportunity for 
+          Latin American students—both graduate and undergraduate—to interact with top cybersecurity experts, gaining 
+          hands-on experience and insights into cutting-edge practices. This collaborative space encourages learning, 
+          growth, and the development of new ideas that contribute to enhancing the cybersecurity landscape in Latin 
+          America.
+        </p>
+
+        <p className="text-lg text-slate-600 leading-relaxed mb-8">
+          Just as AMW honored the memory of{" "}
           <a
             href="https://en.wikipedia.org/wiki/Alberto_O._Mendelzon"
             target="_blank"
@@ -21,7 +36,8 @@ const About = () => {
           >
             Alberto Mendelzon
           </a>
-          , by promoting research ties with Latin America.
+          , by promoting research ties with Latin America, MCyRA aims to honor the continued pursuit of cybersecurity 
+          excellence, emphasizing the importance of international collaboration in securing our digital future.
         </p>
         <img
           src="/src/images/alberto-mendelzon.webp"

@@ -8,10 +8,10 @@ const Hero = () => {
 
         <div className="max-w-5xl mx-auto text-center relative z-10">
         <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
-        20th Alberto Mendelzon International Workshop
+        Mexican Conference on Cybersecurity Research and Applications
         </h1>
         <p className="text-xl md:text-2xl text-blue-100 mb-10 max-w-3xl mx-auto leading-relaxed">
-        Foundations of Data Management • May 2026 • CDMX, Mexico
+        November 9 - 13, 2026 • Ciudad Universitaria, UNAM, Mexico City
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
         <button className="bg-white text-blue-900 px-8 py-3 rounded-full font-bold hover:bg-blue-50 transition-all shadow-lg"

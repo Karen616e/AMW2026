@@ -7,10 +7,10 @@ const DEIDisclaimer = () => {
         </h2>
 
         <p className="text-slate-700 text-lg md:text-xl leading-relaxed">
-          The <strong>AMW</strong> community believes that diversity and culture of support
+          The <strong>MCyRA</strong> community believes that diversity and culture of support
           encourage retention and attraction of talent, promote diversity of thought and
           perspective, and help make the scientific community more flexible and responsive in
-          times of change. For these reasons, AMW 2024 participates in the{" "}
+          times of change. For these reasons, MCyRA 2026 participates in the{" "}
           <a
             href="https://dbdni.github.io/"
             target="_blank"
@@ -27,7 +27,7 @@ const DEIDisclaimer = () => {
             rel="noopener noreferrer"
             className="text-blue-600 hover:text-blue-700 hover:underline"
           >
-            AMW 2026 DEI statement
+            MCyRA 2026 DEI statement
           </a>
           .
         </p>

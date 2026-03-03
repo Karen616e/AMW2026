@@ -36,7 +36,7 @@ const Navbar = () => {
           <div className={`font-bold text-2xl transition-colors duration-300 ${
             scrolled ? 'text-blue-700' : 'text-white'
           }`}>
-            AMW <span className={scrolled ? 'text-slate-400' : 'text-blue-200'}>2026</span>
+            MCyRA <span className={scrolled ? 'text-slate-400' : 'text-blue-200'}>2026</span>
           </div>
           
           {/* Desktop Menu */}

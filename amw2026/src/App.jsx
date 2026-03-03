@@ -4,6 +4,7 @@ import DEIDisclaimer from './components/home/DEIDisclaimer';
 import About from './components/home/About';
 import CallForPapers from './components/home/CallForPapers';
 import Submission from './components/home/Submission';
+import ReviewingProcess from './components/home/ReviewingProcess';
 import DatesTable from './components/home/DatesTable';
 import Contact from './components/home/Contact';
 import Registration from './components/home/Registration';
@@ -28,15 +29,16 @@ function App() {
 
         {/* El flujo lógico de un sitio de Workshop */}
         <DEIDisclaimer />
-        <About/>
         <CallForPapers />
-        <Contact />
         <Submission />
+        <ReviewingProcess />
         <DatesTable />
         <Registration />
         <Grants/>
         <Committee />
         <Venue />
+        <About/>
+        <Contact />
         <Sponsors />
       </main>
 
