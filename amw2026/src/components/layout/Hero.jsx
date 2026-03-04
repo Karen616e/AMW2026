@@ -32,7 +32,7 @@ const Hero = () => {
             </div>
             <div className="flex justify-center mt-8">
                 <img
-                    src="/src/images/RedAcaMexdeCiber.svg" 
+                    src="/RedAcaMexdeCiber.svg" 
                     alt="MCyRA logo"
                     className="h-75 w-75" // Tamaño del logo ajustado
                 />

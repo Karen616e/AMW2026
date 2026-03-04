@@ -35,8 +35,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo y nombre */}
           <div className="flex items-center gap-2">
-            <img
-              src=".../images/Logo_RedAcaMexDeCiber(sinfondo).png" 
+            <img src="/Logo_RedAcaMexDeCiber(sinfondo).png" 
               alt="MCyRA logo"
               className="h-15 w-15" // Tamaño del logo
             />
