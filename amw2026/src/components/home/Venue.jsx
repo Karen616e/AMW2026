@@ -6,9 +6,24 @@ const Venue = () => {
         <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Venue & City</h2>
-        <p className="text-slate-600 max-w-3xl mx-auto text-lg">
-        {venueInfo.description}
+        <p className="text-lg text-slate-600 leading-relaxed mb-8">
+          The conference and all its activities will take place in the Anexo de Ingenieria area (see map below). 
+          The activities will take place in one of the following rooms:
         </p>
+        <div className="mt-8">
+            <p className="text-lg text-slate-600 leading-relaxed mb-8"> 
+            ●   Auditorium “{""} 
+              <a href="https://maps.app.goo.gl/53PxgghasAhECnv28" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700" > 
+                Raúl J. Marsal 
+              </a>“, Building T
+            </p>
+            <p className="text-lg text-slate-600 leading-relaxed mb-8"> 
+            ●   Aula “{""} 
+              <a href="https://maps.app.goo.gl/frWTaLsnCEJhVo2k7" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700" > 
+                Cisco 
+              </a>“ (Q218), Building Q, 2nd floor
+            </p>
+        </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -27,7 +42,7 @@ const Venue = () => {
         {venueInfo.mainVenue.details}
         </p>
         <a
-        href="https://www.google.com/maps/place/Anexo+de+la+Facultad+de+Ingenier%C3%ADa+UNAM/"
+        href="https://maps.app.goo.gl/H4nLBHnwzUj5FWhg8"
         target="_blank"
         className="text-blue-600 font-bold hover:underline flex items-center gap-2"
         >
@@ -46,22 +61,21 @@ const Venue = () => {
         <p className="text-blue-200 text-sm mb-4">{venueInfo.accommodation[0].description}</p>
         <div className="flex justify-between items-center mt-6">
         <span className="text-xs text-blue-300 italic">{venueInfo.accommodation[0].distance}</span>
-        <a href={venueInfo.accommodation[0].link} className="bg-white text-blue-900 px-4 py-2 rounded-lg text-sm font-bold">Book Now</a>
+        <a href={venueInfo.accommodation[0].link} className="bg-white text-blue-900 px-4 py-2 rounded-lg text-sm font-bold">Site</a>
         </div>
         </div>
         </div>
 
         {/* Cultural Spot */}
-        <div className="bg-white border border-slate-200 p-8 rounded-3xl flex items-start gap-6">
-        <div className="hidden sm:block w-20 h-20 bg-amber-100 rounded-2xl flex-shrink-0 flex items-center justify-center">
-        <span className="text-2xl">🏛️</span>
+        <div className="bg-blue-900 text-white p-8 rounded-3xl shadow-lg relative overflow-hidden group">
+        <div className="relative z-10">
+        <span className="bg-blue-500/30 text-xs font-bold uppercase py-1 px-3 rounded-full mb-4 inline-block">Recommended Accommodation</span>
+        <h4 className="text-xl font-bold mb-2">{venueInfo.culturalSpot.name}</h4>
+        <p className="text-blue-200 text-sm mb-4">{venueInfo.culturalSpot.description}</p>
+        <div className="flex justify-between items-center mt-6">
+        <span className="text-xs text-blue-300 italic">{venueInfo.culturalSpot.distance}</span>
+        <a href={venueInfo.culturalSpot.link} className="bg-white text-blue-900 px-4 py-2 rounded-lg text-sm font-bold">Site</a>
         </div>
-        <div>
-        <h4 className="font-bold text-slate-800 text-lg mb-1">{venueInfo.culturalSpot.name}</h4>
-        <p className="text-slate-500 text-sm mb-3">Location: {venueInfo.culturalSpot.location}</p>
-        <p className="text-slate-600 text-sm leading-relaxed">
-        {venueInfo.culturalSpot.description}
-        </p>
         </div>
         </div>
         </div>

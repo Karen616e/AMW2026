@@ -40,7 +40,7 @@ const About = () => {
           excellence, emphasizing the importance of international collaboration in securing our digital future.
         </p>
         <img
-          src="/src/images/alberto-mendelzon.webp"
+          src="https://amw2024.github.io/media/alberto-mendelzon_hu0a98c6f57b440a5ce2eff07c7bb1fe96_13143_1200x1200_fit_q75_h2_lanczos.webp"
           alt="Alberto Mendelzon"
           className="mx-auto rounded-full max-w-xs mb-6"
         />

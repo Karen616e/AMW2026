@@ -6,6 +6,7 @@ import CallForPapers from './components/home/CallForPapers';
 import Submission from './components/home/Submission';
 import ReviewingProcess from './components/home/ReviewingProcess';
 import DatesTable from './components/home/DatesTable';
+import Diversity from './components/home/Diversity';
 import Contact from './components/home/Contact';
 import Registration from './components/home/Registration';
 import Committee from './components/home/Committee';
@@ -33,6 +34,7 @@ function App() {
         <Submission />
         <ReviewingProcess />
         <DatesTable />
+        <Diversity/>
         <Registration />
         <Grants/>
         <Committee />

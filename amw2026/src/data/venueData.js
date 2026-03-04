@@ -9,14 +9,17 @@ export const venueInfo = {
     accommodation: [
         {
             name: "Hotel Royal Pedregal",
-            distance: "3.2 km from venue",
-            description: "Modern hotel with two restaurants, gym, and swimming pools. Ideal for international attendees.",
+            distance: "~2 km away from the UNAM",
+            description: "Periférico Sur 4363, Col. Jardines en la montaña, Del. Tlalpan, Mexico City",
             link: "http://www.hotelesroyal.com.mx/"
         }
+        
     ],
+    
     culturalSpot: {
-        name: "Palacio de Minería",
-        location: "Historic Center",
-        description: "A neoclassical masterpiece in the heart of the city, often hosting major academic and cultural events."
+        name: "Hotel Radisson Perisur",
+        distance: "~1 km away from the UNAM",
+        description: "Cúspide 53, Col. Parques del Pedregal, Del. Tlalpan, Mexico City",
+        link: "https://www.radisson.com.mx/"
     }
 };

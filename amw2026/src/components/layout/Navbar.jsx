@@ -18,6 +18,7 @@ const Navbar = () => {
     { name: 'About', href: '#about'},
     { name: 'Topics', href: '#call-for-papers' },
     { name: 'Submission', href: '#submission' },
+    { name: 'Reviewing Process', href: '#ReviewingProcess' },
     { name: 'Dates', href: '#dates' },
     { name: 'Contact', href: '#contact'},
     { name: 'Registration', href: '#registration' },
@@ -32,11 +33,18 @@ const Navbar = () => {
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <div className={`font-bold text-2xl transition-colors duration-300 ${
-            scrolled ? 'text-blue-700' : 'text-white'
-          }`}>
-            MCyRA <span className={scrolled ? 'text-slate-400' : 'text-blue-200'}>2026</span>
+          {/* Logo y nombre */}
+          <div className="flex items-center gap-2">
+            <img
+              src="/src/images/Logo_RedAcaMexDeCiber(sinfondo).png" 
+              alt="MCyRA logo"
+              className="h-15 w-15" // Tamaño del logo
+            />
+            <div className={`font-bold text-2xl transition-colors duration-300 ${
+              scrolled ? 'text-blue-700' : 'text-white'
+            }`}>
+              MCyRA <span className={scrolled ? 'text-slate-400' : 'text-blue-200'}>2026</span>
+            </div>
           </div>
           
           {/* Desktop Menu */}
