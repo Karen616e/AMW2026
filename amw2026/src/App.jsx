@@ -1,7 +1,7 @@
 import Navbar from './components/layout/Navbar';
 import Hero from './components/home/Hero';
 import DEIDisclaimer from './components/home/DEIDisclaimer';
-import About from './components/home/About';
+//import About from './components/home/About';
 import CallForPapers from './components/home/CallForPapers';
 import Submission from './components/home/Submission';
 import ReviewingProcess from './components/home/ReviewingProcess';
@@ -39,7 +39,7 @@ function App() {
         <Grants/>
         <Committee />
         <Venue />
-        <About/>
+        {/* <About/> */}
         <Contact />
         <Sponsors />
       </main>

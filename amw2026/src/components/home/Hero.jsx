@@ -25,11 +25,14 @@ const Hero = () => {
                 November 9 - 13, 2026 • Ciudad Universitaria, UNAM, Mexico City 
             </p> 
             
-            <div className="flex flex-col sm:flex-row justify-center gap-4"> 
-                <button className="bg-white text-blue-900 px-8 py-3 rounded-full font-bold hover:bg-blue-50 transition-all shadow-lg" onClick={() => window.location.href = "https://ceur-ws.org/Vol-3954/"}> 
-                    Workshop Proceedings 
-                </button> 
-            </div>
+<div className="flex flex-col sm:flex-row justify-center gap-4"> 
+          {/* Botón de Workshop Proceedings oculto (comentado)
+          <button className="bg-white text-blue-900 px-8 py-3 rounded-full font-bold hover:bg-blue-50 transition-all shadow-lg" onClick={() => window.location.href = "https://ceur-ws.org/Vol-3954/"}> 
+            Workshop Proceedings 
+          </button>  
+          */}
+        </div>
+        
             <div className="flex justify-center mt-8">
                 <img
                     src="/RedAcaMexdeCiber.svg" 
