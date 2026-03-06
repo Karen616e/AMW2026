@@ -15,7 +15,7 @@ const Navbar = () => {
 
   const menuItems = [
     { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about'},
+    // { name: 'About', href: '#about'},
     { name: 'Topics', href: '#call-for-papers' },
     { name: 'Submission', href: '#submission' },
     { name: 'Reviewing Process', href: '#ReviewingProcess' },
@@ -25,6 +25,7 @@ const Navbar = () => {
     { name: 'Organization', href: '#organization' },
     { name: 'Grants', href: '#grants' },
     { name: 'Venue', href: '#venue' },
+    { name: 'Committees', href: '#Committees' }
   ];
 
   return (
