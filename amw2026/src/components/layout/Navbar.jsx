@@ -36,9 +36,9 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo y nombre */}
           <div className="flex items-center gap-2">
-            <img src="/Logo_RedAcaMexDeCiber(sinfondo).png" 
+            <img src="/Logo 1.jpeg" 
               alt="MCyRA logo"
-              className="h-15 w-15" // Tamaño del logo
+              className="rounded-full h-15 w-15" // Tamaño del logo
             />
             <div className={`font-bold text-2xl transition-colors duration-300 ${
               scrolled ? 'text-blue-700' : 'text-white'
