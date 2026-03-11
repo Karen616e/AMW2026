@@ -1,8 +1,5 @@
 import Navbar from './components/layout/Navbar';
 import Hero from './components/home/Hero';
-import DEIDisclaimer from './components/home/DEIDisclaimer';
-import Committees from './components/home/Committees';
-//import About from './components/home/About';
 import CallForPapers from './components/home/CallForPapers';
 import Submission from './components/home/Submission';
 import ReviewingProcess from './components/home/ReviewingProcess';
@@ -10,8 +7,8 @@ import DatesTable from './components/home/DatesTable';
 import Diversity from './components/home/Diversity';
 import Contact from './components/home/Contact';
 import Registration from './components/home/Registration';
-import Committee from './components/home/Committee';
 import Venue from './components/home/Venue';
+import Organization from './components/home/Organization';
 import Sponsors from './components/home/Sponsors';
 import Footer from './components/layout/Footer';
 import Grants from './components/home/Grants';
@@ -30,7 +27,6 @@ function App() {
         </div>
 
         {/* El flujo lógico de un sitio de Workshop */}
-        <DEIDisclaimer />
         <CallForPapers />
         <Submission />
         <ReviewingProcess />
@@ -38,10 +34,8 @@ function App() {
         <Diversity/>
         <Registration />
         <Grants/>
-        <Committee />
         <Venue />
-        {/* <About/> */}
-        <Committees /> 
+        <Organization/>
         <Contact />
         <Sponsors />
       </main>

@@ -9,7 +9,19 @@ const Submission = () => {
   return (
     <section id="submission" className="py-20 bg-white">
       <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-slate-800 mb-10">Submission Guidelines</h2>
+        <h2 className="text-3xl font-bold text-slate-800 mb-6">Paper Submission Guidelines</h2>
+        
+        {/* --- NUEVO BLOQUE DE TEXTO REUBICADO --- */}
+        <div className="mb-10 p-6 bg-blue-50 rounded-2xl border border-blue-100 text-left">
+          <p className="text-slate-700 leading-relaxed mb-4">
+            Submissions should be prepared following the authors' guidelines provided by Springer LNCS series. Papers will be submitted and presented at the conference in English. All submissions will be blind peer-reviewed. The final acceptance will be based on a peer review of the full-length paper.
+          </p>
+          <p className="font-bold text-slate-800">
+            Submission site: <span className="text-blue-600 font-normal">TBA</span>
+          </p>
+        </div>
+
+        {/* --- DETALLES DE LOS PAPERS --- */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {guidelines.map((g, i) => (
             <div key={i} className="flex gap-4">
@@ -23,6 +35,8 @@ const Submission = () => {
             </div>
           ))}
         </div>
+        
+        {/* --- RECUADRO INFERIOR --- */}
         <div className="mt-12 p-6 bg-slate-50 rounded-2xl border border-slate-200 text-center">
           <p className="text-slate-600 mb-4 italic">
             Accepted papers will be published in the CEUR Workshop Proceedings.

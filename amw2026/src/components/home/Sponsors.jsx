@@ -1,10 +1,20 @@
 const Sponsors = () => {
   const sponsors = [
-    { name: "Very Large Data Bases", logo: "https://www.vldb.org/images/logo.gif", url: "https://www.vldb.org/" },
-    { name: "Ambassade de France au Mexique", logo: "https://amw2024.github.io/uploads/logos/ambassade-france.svg", url: "https://mx.ambafrance.org/" },
-    { name: "ACM", logo: "https://www.acm.org/binaries/content/gallery/global/top-menu/acm_logo_tablet.svg", url: "https://www.acm.org/" },
-    { name: "CPE Lyon", logo: "https://www.cpe.fr/wp-content/themes/acti-main/img/logo-cpe-bleu.svg", url: "https://www.cpe.fr/" },
-    { name: "CEUR", logo: "https://amw2024.github.io/uploads/logos/ceur-ws.png", url: "https://ceur-ws.org/" }
+    { 
+      name: "UNAM", 
+      logo: "/logos/unam.png", // Coloca el logo real en tu carpeta public/logos
+      url: "https://www.unam.mx/" 
+    },
+    { 
+      name: "INAOE", 
+      logo: "/logos/inaoe.png", // Coloca el logo real en tu carpeta public/logos
+      url: "https://www.inaoep.mx/" 
+    },
+    { 
+      name: "CIC IPN", 
+      logo: "/logos/cic-ipn.png", // Coloca el logo real en tu carpeta public/logos
+      url: "https://www.cic.ipn.mx/" 
+    }
   ];
 
   return (
@@ -19,7 +29,7 @@ const Sponsors = () => {
               <img
                 src={s.logo}
                 alt={s.name}
-                className="h-12 grayscale hover:grayscale-0 transition-all"
+                className="h-16 md:h-20 grayscale hover:grayscale-0 transition-all object-contain"
               />
             </a>
           ))}

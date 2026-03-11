@@ -8,21 +8,11 @@ const Contact = () => {
                 <div className="flex items-center gap-4">
                     {/* Correo */}
                     <a
-                        href="mailto:amw2024news@groups.google.com"
+                        href="mailto:MCYRA2026@fi-b.unam.mx"
                         className="flex items-center text-blue-600 hover:text-blue-800 transition-colors"
                     >
                         <FaEnvelope className="mr-2 text-xl" />
-                        amw2024news@groups.google.com
-                    </a>
-                </div>
-                <div className="flex items-center gap-4 mt-4">
-                    {/* Twitter */}
-                    <a
-                        href="https://twitter.com/amw2024news"
-                        className="flex items-center text-blue-600 hover:text-blue-800 transition-colors"
-                    >
-                        <FaTwitter className="mr-2 text-xl" />
-                        @amw2024news
+                        MCYRA2026@fi-b.unam.mx
                     </a>
                 </div>
             </div>

@@ -1,49 +1,43 @@
 export const importantDates = [
     {
         event: "CFP and web page starting",
-        date: "February 9, 2026",
-        status: "past", // open, upcoming, past
+        date: "March 18, 2026",
+        status: "upcoming", // open, upcoming, past
         note: ""
     },
 {
     event: "Full Paper Submission Deadline",
-    date: "April 26, 2026",
+    date: "May 10, 2026 with a possible one or two week extension period",
     status: "upcoming",
     note: ""
 },
 {
-    event: "Notification of early-rejection papers",
-    date: "June 14, 2026",
+    event: "Notification of reviews",
+    date: "June 28, 2026",
     status: "upcoming",
     note: ""
 },
 {
-    event: "Author rebuttal period",
-    date: "July 6 – 12, 2026",
-    status: "upcoming",
-    note: ""
-},
-{
-    event: "Rebuttal deadline",
-    date: "July 12, 2026",
+    event: "Rebuttal period",
+    date: "July 12 – 29, 2026",
     status: "upcoming",
     note: ""
 },
 {
     event: "Author notification",
-    date: "July 25, 2026",
+    date: "August 9, 2026",
     status: "upcoming",
     note: ""
 },
 {
     event: "Camera ready",
-    date: "August 17, 2026",
+    date: "August 24, 2026",
     status: "upcoming",
     note: ""
 },
 {
     event: "Registration *",
-    date: "Until September 18, 2026",
+    date: "From August 10 Until September 18, 2026",
     status: "upcoming",
     note: "* Please check this link for applying for a VISA or entry permit (if applicable)."
 }
