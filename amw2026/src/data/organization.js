@@ -32,14 +32,14 @@ export const organizationData = [
   {
     role: "Track Chairs",
     members: [
-      { name: "Moisés Salinas Rosales", affiliation: "" },
-      { name: "Luis Julián Domínguez Pérez", affiliation: "" },
-      { name: "Laura Margarita Rodríguez Peralta", affiliation: "" },
-      { name: "Alejandra Silva Trujillo", affiliation: "" },
-      { name: "Izlian Orea Flores", affiliation: "" },
-      { name: "Manuel Cedillo Hernández", affiliation: "" },
-      { name: "Raúl Acosta Bermejo", affiliation: "" },
-      { name: "Víctor Manuel Morales Rocha", affiliation: "" }
+      { name: "Moisés Salinas Rosales", affiliation: "CIC-IPN" },
+      { name: "Luis Julián Domínguez Pérez", affiliation: "ITESO" },
+      { name: "Laura Margarita Rodríguez Peralta", affiliation: "UPAEP" },
+      { name: "Alejandra Silva Trujillo", affiliation: "UASLP" },
+      { name: "Izlian Orea Flores", affiliation: "UPIITA-IPN" },
+      { name: "Manuel Cedillo Hernández", affiliation: "ESIME-Culhuacán" },
+      { name: "Raúl Acosta Bermejo", affiliation: "CIC-IPN" },
+      { name: "Víctor Manuel Morales Rocha", affiliation: "UACJ" }
     ]
   },
   {
