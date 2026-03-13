@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+/* Esta línea le dice a Tailwind v4 que use la clase .dark para el modo oscuro */
+@variant dark (&:where(.dark, .dark *));
+
+/* (Opcional) Si quieres que el cambio de fondo sea suave en toda la página */
+@layer base {
+  html {
+    @apply transition-colors duration-300;
+  }
+}

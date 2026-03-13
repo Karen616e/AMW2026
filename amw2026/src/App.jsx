@@ -1,24 +1,18 @@
-// src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-// Layout global
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
-
-// Vistas
+import ScrollToTop from './components/layout/ScrollToTop'; // <--- Importación
 import HomeView from './views/HomeView';
-import CommitteeView from './views/CommitteeView';
 import SubmissionView from './views/SubmissionView';
+import CommitteeView from './views/CommitteeView';
 import AttendView from './views/AttendView';
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col font-sans">
-        {/* Navbar siempre visible arriba */}
+      <ScrollToTop /> 
+      <div className="flex flex-col min-h-screen">
         <Navbar />
-
-        {/* El contenido principal que cambia según la URL */}
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<HomeView />} />
@@ -27,8 +21,6 @@ function App() {
             <Route path="/attend" element={<AttendView />} />
           </Routes>
         </main>
-
-        {/* Footer siempre visible abajo */}
         <Footer />
       </div>
     </Router>

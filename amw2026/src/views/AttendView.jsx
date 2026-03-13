@@ -6,7 +6,8 @@ import Diversity from '../components/home/Diversity';
 
 const AttendView = () => {
   return (
-    <div className="pt-24 pb-12 bg-slate-50">
+    // Agregamos dark:bg-slate-900 y la transición suave
+    <div className="pt-24 pb-12 bg-slate-50 dark:bg-slate-900 transition-colors duration-300 min-h-screen">
       <Registration />
       <Grants />
       <Venue />

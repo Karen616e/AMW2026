@@ -5,7 +5,8 @@ import ReviewingProcess from '../components/home/ReviewingProcess';
 
 const SubmissionView = () => {
   return (
-    <div className="pt-24 pb-12 bg-white">
+    // Cambiamos bg-white por bg-white dark:bg-slate-900 y añadimos min-h-screen
+    <div className="pt-24 pb-12 bg-white dark:bg-slate-900 transition-colors duration-300 min-h-screen">
       <CallForPapers />
       <Submission />
       <ReviewingProcess />
