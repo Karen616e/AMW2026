@@ -10,7 +10,7 @@ const Hero = () => {
         height: '100vh', // Ajusta la altura del contenedor
       }}
     >
-        {/* Decoración geométrica de fondo (opcional) */} 
+        {/* Decoración geométrica de fondo*/} 
         <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none"> 
             <div className="absolute -top-24 -left-24 w-96 h-96 bg-white rounded-full blur-3xl">
             </div> 
@@ -26,18 +26,13 @@ const Hero = () => {
             </p> 
             
 <div className="flex flex-col sm:flex-row justify-center gap-4"> 
-          {/* Botón de Workshop Proceedings oculto (comentado)
-          <button className="bg-white text-blue-900 px-8 py-3 rounded-full font-bold hover:bg-blue-50 transition-all shadow-lg" onClick={() => window.location.href = "https://ceur-ws.org/Vol-3954/"}> 
-            Workshop Proceedings 
-          </button>  
-          */}
         </div>
         
             <div className="flex justify-center mt-8">
                 <img
                     src="/Logo 2.jpeg" 
                     alt="MCyRA logo"
-                    className="rounded-full h-80 w-80" // Tamaño del logo ajustado
+                    className="rounded-full h-80 w-80" // 
                 />
             </div>
         </div> 

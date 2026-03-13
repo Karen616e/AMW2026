@@ -1,4 +1,4 @@
-import { FaEnvelope, FaTwitter } from 'react-icons/fa'; // Importa los íconos que necesitas
+import { FaEnvelope, FaTwitter } from 'react-icons/fa'; 
 
 const Contact = () => {
     return (
