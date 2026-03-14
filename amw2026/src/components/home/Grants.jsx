@@ -11,7 +11,7 @@ const Grants = () => {
         <p className="text-slate-600 dark:text-slate-300 mb-10 leading-relaxed text-lg max-w-2xl mx-auto">
           To support the participation of the next generation of researchers, a limited number of 
           travel grants will be available for students who are co-authors of accepted papers. 
-          These grants aim to cover registration fees and contribute toward travel expenses to **Mexico City**.
+          These grants aim to cover registration fees and contribute toward travel expenses to Mexico City.
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center items-center gap-6">

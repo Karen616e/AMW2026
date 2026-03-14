@@ -15,7 +15,7 @@ const Venue = () => {
                     
                     {/* Lista de Salas Optimizada */}
                     <div className="flex flex-col sm:flex-row justify-center gap-6">
-                        <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" 
+                        <a href="https://www.google.com/maps/place/Auditorio+Ra%C3%BAl+J.+Marsal/@19.3261227,-99.1826181,1611m/data=!3m1!1e3!4m15!1m8!3m7!1s0x85ce0004fa5e2251:0x5b7f2df6637d23ab!2sAuditorio+Ra%C3%BAl+J.+Marsal!8m2!3d19.3284988!4d-99.18116!10e1!16s%2Fg%2F1hdzrp1wp!3m5!1s0x85ce0004fa5e2251:0x5b7f2df6637d23ab!8m2!3d19.3284988!4d-99.18116!16s%2Fg%2F1hdzrp1wp?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" 
                            className="flex items-center gap-3 bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:border-blue-400 transition-all group">
                             <span className="text-2xl group-hover:scale-110 transition-transform">📍</span>
                             <div className="text-left">
@@ -23,7 +23,7 @@ const Venue = () => {
                                 <span className="font-bold text-slate-800 dark:text-slate-200">Raúl J. Marsal, Bldg T</span>
                             </div>
                         </a>
-                        <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" 
+                        <a href="https://www.google.com/maps/place/Auditorio+Ra%C3%BAl+J.+Marsal/@19.3261227,-99.1826181,1611m/data=!3m1!1e3!4m15!1m8!3m7!1s0x85ce0004fa5e2251:0x5b7f2df6637d23ab!2sAuditorio+Ra%C3%BAl+J.+Marsal!8m2!3d19.3284988!4d-99.18116!10e1!16s%2Fg%2F1hdzrp1wp!3m5!1s0x85ce0004fa5e2251:0x5b7f2df6637d23ab!8m2!3d19.3284988!4d-99.18116!16s%2Fg%2F1hdzrp1wp?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" 
                            className="flex items-center gap-3 bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 hover:border-blue-400 transition-all group">
                             <span className="text-2xl group-hover:scale-110 transition-transform">📍</span>
                             <div className="text-left">
@@ -35,22 +35,30 @@ const Venue = () => {
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
-                    {/* Tarjeta Principal: UNAM */}
+                    {/* Tarjeta Principal: UNAM con FOTO */}
                     <div className="bg-white dark:bg-slate-800 rounded-3xl shadow-xl overflow-hidden flex flex-col border border-slate-100 dark:border-slate-700 transition-colors">
-                        <div className="h-64 bg-blue-800 dark:bg-blue-900 relative flex items-center justify-center overflow-hidden">
-                            <span className="text-white text-6xl opacity-10 font-bold uppercase tracking-widest select-none">UNAM</span>
+                        <div className="h-64 relative flex items-center justify-center overflow-hidden">
+                            {/* IMAGEN DE LA FACULTAD */}
+                            <img 
+                                src="/fi_unam.jpg" 
+                                alt="Facultad de Ingeniería UNAM"
+                                className="absolute inset-0 w-full h-full object-cover"
+                            />
+                            
+                            {/* Overlay degradado para asegurar legibilidad del texto blanco */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-blue-900/90 via-blue-900/20 to-transparent dark:from-slate-950 dark:via-slate-900/40"></div>
+                            
                             <div className="absolute bottom-6 left-6 text-white text-left z-10">
-                                <h3 className="text-2xl font-bold">{venueInfo.mainVenue.name}</h3>
-                                <p className="text-blue-100 dark:text-blue-200 text-sm">{venueInfo.mainVenue.address}</p>
+                                <h3 className="text-2xl font-bold drop-shadow-md">{venueInfo.mainVenue.name}</h3>
+                                <p className="text-blue-100 dark:text-blue-200 text-sm font-medium drop-shadow-sm">{venueInfo.mainVenue.address}</p>
                             </div>
-                            <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent"></div>
                         </div>
                         <div className="p-8 flex-grow">
                             <p className="text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
                                 {venueInfo.mainVenue.details}
                             </p>
                             <a
-                                href="https://maps.google.com"
+                                href="https://www.google.com/maps/place/Facultad+de+Ingenier%C3%ADa+UNAM/@19.3313883,-99.1872813,1075m/data=!3m3!1e3!4b1!5s0x85ce0001577b6221:0x74dc9613abb964b1!4m6!3m5!1s0x85ce00015be0a713:0x3fc11681a8244370!8m2!3d19.3313833!4d-99.1847064!16s%2Fm%2F027vtty?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 bg-blue-600 dark:bg-blue-500 text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-blue-700 transition-all shadow-md"
@@ -82,19 +90,18 @@ const Venue = () => {
                                         </a>
                                     </div>
                                 </div>
-                                {/* Decoración de fondo */}
                                 <div className="absolute -right-8 -bottom-8 w-32 h-32 bg-blue-500/10 rounded-full blur-2xl group-hover:bg-blue-500/20 transition-all"></div>
                             </div>
                         ))}
                     </div>
                 </div>
 
-                {/* Tips de Viaje para CDMX */}
+                {/* Tips de Viaje */}
                 <div className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-12">
                     {[
                         { icon: "🚇", title: "Public Transport", text: "Use the Metro (Line 3, Universidad) or Metrobus to reach Ciudad Universitaria efficiently." },
                         { icon: "🌮", title: "Gastronomy", text: "Explore local tacos and street food near campus or in the nearby Coyoacán historic center." },
-                        { icon: "☀️", title: "Altitude & Weather", text: "CDMX is at 2,240m. November is usually pleasant, but evenings can be cool; bring a light jacket." }
+                        { icon: "☀️", title: "Altitude & Weather", text: "CDMX is at 2,240m. The climate is usually pleasant, but evenings can be cool; bring a light jacket." }
                     ].map((tip, i) => (
                         <div key={i} className="text-center group">
                             <div className="text-4xl mb-6 transform group-hover:scale-110 transition-transform duration-300 drop-shadow-sm">{tip.icon}</div>
