@@ -17,7 +17,7 @@ const Venue = () => {
 
                 {/* NUEVO: Mapas de las Salas Específicas */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-                    {/* Mapa 1: Auditorio */}
+                    {/* Auditorio */}
                     <div className="bg-white dark:bg-slate-800 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-700 overflow-hidden hover:border-blue-400 transition-colors group">
                         <div className="p-6 md:p-8 border-b border-slate-100 dark:border-slate-700 flex items-center gap-5">
                             <div className="p-4 bg-blue-100 dark:bg-blue-900/40 rounded-2xl text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform">
@@ -29,9 +29,8 @@ const Venue = () => {
                             </div>
                         </div>
                         <div className="h-72 w-full relative bg-slate-200 dark:bg-slate-700">
-                            {/* Reemplaza el src con el enlace "Embed a map" de Google Maps */}
                             <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.717148816694!2d-99.18485298464303!3d19.33083318694008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0003cb067a93%3A0xc392fb6fb8bdf581!2sAnexo%20de%20Ingenier%C3%ADa%2C%20UNAM!5e0!3m2!1sen!2smx!4v1710790000000!5m2!1sen!2smx" 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d149771.00369364923!2d-99.20733461647107!3d19.374407416415366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0004fa5e2251%3A0x5b7f2df6637d23ab!2sAuditorio%20Ra%C3%BAl%20J.%20Marsal!5e1!3m2!1ses!2smx!4v1773877034966!5m2!1ses!2smx"
                                 className="absolute inset-0 w-full h-full border-0" 
                                 allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"
                                 title="Map of Auditorium Raúl J. Marsal"
@@ -39,7 +38,7 @@ const Venue = () => {
                         </div>
                     </div>
 
-                    {/* Mapa 2: Aula */}
+                    {/* Aula */}
                     <div className="bg-white dark:bg-slate-800 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-700 overflow-hidden hover:border-blue-400 transition-colors group">
                         <div className="p-6 md:p-8 border-b border-slate-100 dark:border-slate-700 flex items-center gap-5">
                             <div className="p-4 bg-blue-100 dark:bg-blue-900/40 rounded-2xl text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform">
@@ -51,9 +50,9 @@ const Venue = () => {
                             </div>
                         </div>
                         <div className="h-72 w-full relative bg-slate-200 dark:bg-slate-700">
-                            {/* Reemplaza el src con el enlace "Embed a map" de Google Maps para el Edificio Q */}
+                            {/*Edificio Q */}
                             <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.717148816694!2d-99.18485298464303!3d19.33083318694008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0003cb067a93%3A0xc392fb6fb8bdf581!2sAnexo%20de%20Ingenier%C3%ADa%2C%20UNAM!5e0!3m2!1sen!2smx!4v1710790000000!5m2!1sen!2smx" 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4681.676765727584!2d-99.18466952402338!3d19.327952844013073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce000453108fe9%3A0xefb9ac808d9135b2!2sEdificio%20Q%20%22Luis%20G.%20Vald%C3%A9s%20Vallejo%22!5e1!3m2!1ses!2smx!4v1773877117981!5m2!1ses!2smx"
                                 className="absolute inset-0 w-full h-full border-0" 
                                 allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"
                                 title="Map of Aula Cisco"
@@ -62,7 +61,7 @@ const Venue = () => {
                     </div>
                 </div>
 
-                {/* Tarjeta Principal: Foto del Anexo (Restaurada) */}
+                {/* Tarjeta Principal: Foto del Anexo  */}
                 <div className="bg-white dark:bg-slate-800 rounded-3xl shadow-xl overflow-hidden flex flex-col border border-slate-100 dark:border-slate-700 transition-colors max-w-5xl mx-auto mb-24">
                     <div className="h-64 md:h-80 relative flex items-center justify-center overflow-hidden">
                         {/* IMAGEN DE LA FACULTAD */}
