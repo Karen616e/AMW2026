@@ -1,74 +1,93 @@
 import React from 'react';
 import { organizationData } from '../../data/organization';
 
+// Función para obtener las iniciales del nombre 
+const getInitials = (name) => {
+  const parts = name.trim().split(' ');
+  if (parts.length === 1) return parts[0].charAt(0).toUpperCase();
+  return (parts[0].charAt(0) + parts[1].charAt(0)).toUpperCase();
+};
+
 const Organization = () => {
   return (
-    <section id="organization" className="py-20 bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
+    <section id="organization" className="py-24 bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-4">
         
         {/* Encabezado de la sección */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-800 dark:text-white mb-4">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-black text-slate-800 dark:text-white mb-6 tracking-tight">
             Organization & Committees
           </h2>
-          {/* Aplicamos max-w-2xl para que el párrafo no se estire de más */}
-          <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-lg leading-relaxed">
+          <div className="w-20 h-1.5 bg-blue-600 mx-auto rounded-full mb-8"></div>
+          <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed">
             The conference is organized by a dedicated team of researchers
             focused on cybersecurity research and applications.
           </p>
         </div>
 
         {/* Iteración sobre los grupos */}
-        <div className="space-y-20">
+        <div className="space-y-24">
           {organizationData.map((group, index) => {
-            const hasImages = group.members.some(member => member.image);
+            // Lógica para decidir el diseño: Si son pocos (Chairs), usamos tarjetas grandes. Si son muchos (PC), usamos lista compacta.
+            const isLargeGroup = group.members.length > 6;
 
             return (
               <div key={index} className="animate-fade-in">
+                
                 {/* Título de la categoría */}
-                <h3 className="text-xl md:text-2xl font-bold text-slate-800 dark:text-slate-200 mb-10 text-center border-b-2 border-blue-100 dark:border-slate-800 pb-4 w-max mx-auto px-10">
-                  {group.role}
-                </h3>
+                <div className="flex items-center justify-center gap-4 mb-12">
+                  <div className="h-px w-12 bg-blue-200 dark:bg-slate-700"></div>
+                  <h3 className="text-2xl md:text-3xl font-black text-slate-800 dark:text-white text-center tracking-wide uppercase">
+                    {group.role}
+                  </h3>
+                  <div className="h-px w-12 bg-blue-200 dark:bg-slate-700"></div>
+                </div>
 
-                {hasImages ? (
-                  /* --- VISTA DE TARJETAS CON FOTO --- */
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+                {!isLargeGroup ? (
+                  /* --- VISTA DE TARJETAS (Para Chairs) --- */
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center max-w-5xl mx-auto">
                     {group.members.map((member, idx) => (
                       <div
                         key={idx}
-                        className="bg-white dark:bg-slate-800/40 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700/50 hover:shadow-md hover:border-blue-200 dark:hover:border-blue-500 transition-all duration-300 text-center group"
+                        className="bg-white dark:bg-slate-800/80 p-8 rounded-3xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-xl hover:-translate-y-1 hover:border-blue-300 dark:hover:border-blue-500 transition-all duration-300 text-center group relative overflow-hidden"
                       >
-                        <div className="relative mb-6 inline-block">
-                          {/* Efecto de halo azul al pasar el mouse */}
-                          <div className="absolute inset-0 bg-blue-600 dark:bg-blue-500 rounded-full scale-0 group-hover:scale-105 opacity-10 transition-transform duration-300"></div>
-                          <img
-                            src={member.image}
-                            alt={member.name}
-                            className="relative w-28 h-28 rounded-full mx-auto object-cover border-4 border-white dark:border-slate-800 shadow-sm"
-                          />
+                        {/* Decoración de fondo sutil */}
+                        <div className="absolute top-0 right-0 w-24 h-24 bg-blue-50 dark:bg-blue-900/10 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
+                        
+                        {/* Avatar Tipográfico */}
+                        <div className="relative mb-6 inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-slate-50 dark:bg-slate-900 border-2 border-slate-100 dark:border-slate-700 group-hover:bg-blue-600 group-hover:border-blue-600 transition-colors duration-300 shadow-sm z-10">
+                          <span className="text-2xl font-black text-blue-600 dark:text-blue-400 group-hover:text-white transition-colors">
+                            {getInitials(member.name)}
+                          </span>
                         </div>
-                        <h4 className="font-bold text-lg text-slate-800 dark:text-white group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors">
-                          {member.name}
-                        </h4>
-                        <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mt-2 font-medium">
-                          {member.affiliation}
-                        </p>
+                        
+                        <div className="relative z-10">
+                          <h4 className="font-bold text-xl text-slate-800 dark:text-white mb-2 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors">
+                            {member.name}
+                          </h4>
+                          <p className="text-blue-600 dark:text-blue-400 text-sm font-semibold uppercase tracking-wider">
+                            {member.affiliation}
+                          </p>
+                        </div>
                       </div>
                     ))}
                   </div>
                 ) : (
-                  /* --- VISTA DE LISTA DE TEXTO --- */
-                  <div className="bg-white dark:bg-slate-800/40 p-8 md:p-12 border border-slate-100 dark:border-slate-700/50 rounded-2xl shadow-sm transition-all">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-12">
+                  /* --- VISTA DE CUADRÍCULA COMPACTA (Para Program Committee / Track Chairs) --- */
+                  <div className="bg-white dark:bg-slate-800/40 p-8 md:p-12 border border-slate-100 dark:border-slate-700 rounded-3xl shadow-sm">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-10">
                       {group.members.map((member, idx) => (
-                        <div key={idx} className="flex items-start gap-3 group">
-                          <span className="text-blue-400 dark:text-blue-500 mt-1 flex-shrink-0 group-hover:scale-125 transition-transform">•</span>
+                        <div key={idx} className="flex items-start gap-4 group p-3 -m-3 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors duration-300 cursor-default">
+                          <span className="text-blue-600 dark:text-blue-500 mt-1 flex-shrink-0 group-hover:scale-125 transition-transform">
+                            {/* SVG de usuario */}
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                          </span>
                           <div>
-                            <span className="font-bold text-slate-700 dark:text-slate-200 block group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                            <span className="font-bold text-lg text-slate-800 dark:text-slate-200 block group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                               {member.name}
                             </span>
                             {member.affiliation && (
-                              <span className="text-xs md:text-sm text-slate-500 dark:text-slate-400 leading-tight block mt-0.5">
+                              <span className="text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 block mt-1">
                                 {member.affiliation}
                               </span>
                             )}

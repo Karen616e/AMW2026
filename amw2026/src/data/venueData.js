@@ -1,6 +1,6 @@
 export const venueInfo = {
     city: "Mexico City (CDMX)",
-    description: "Mexico City is a vibrant metropolis where history and modernity collide. Known for its rich culture, world-class gastronomy, and academic excellence, it's the perfect backdrop for AMW 2026.",
+    description: "Mexico City is a vibrant metropolis where history and modernity collide. Known for its rich culture, world-class gastronomy, and academic excellence, it's the perfect backdrop for MCyRA 2026.",
     mainVenue: {
         name: "Facultad de Ingeniería (Anexo), UNAM",
         address: "Cto. Exterior, Ciudad Universitaria, Coyoacán, 04510 Ciudad de México, CDMX",

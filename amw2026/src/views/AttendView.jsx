@@ -2,7 +2,6 @@ import React from 'react';
 import Registration from '../components/home/Registration';
 import Grants from '../components/home/Grants';
 import Venue from '../components/home/Venue';
-import Diversity from '../components/home/Diversity';
 
 const AttendView = () => {
   return (
@@ -11,7 +10,6 @@ const AttendView = () => {
       <Registration />
       <Grants />
       <Venue />
-      <Diversity />
     </div>
   );
 };
