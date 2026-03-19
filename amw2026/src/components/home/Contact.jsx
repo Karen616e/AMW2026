@@ -16,11 +16,11 @@ const Contact = () => {
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                     {/* Correo */}
                     <a
-                        href="mailto:MCYRA2026@fi-b.unam.mx"
+                        href="mailto:mcyra2026@fi-b.unam.mx"
                         className="flex items-center gap-3 bg-blue-50 dark:bg-slate-800/80 text-blue-700 dark:text-blue-400 px-8 py-4 rounded-full hover:bg-blue-100 hover:text-blue-800 dark:hover:bg-slate-700 dark:hover:text-blue-300 transition-all duration-300 shadow-sm"
                     >
                         <FaEnvelope className="text-xl" />
-                        <span className="font-semibold tracking-wide">MCYRA2026@fi-b.unam.mx</span>
+                        <span className="font-semibold tracking-wide">mcyra2026@fi-b.unam.mx</span>
                     </a>
                 </div>
 
