@@ -30,7 +30,7 @@ const Hero = () => {
 
         <div className="flex justify-center mt-12">
           <img
-            src="/Logo 2.jpeg" 
+            src="Logo 2.jpeg" 
             alt="MCyRA logo"
             className="rounded-full h-64 w-64 md:h-80 md:w-80 object-cover border-4 border-white/20 dark:border-slate-800/50 shadow-xl" 
           />
