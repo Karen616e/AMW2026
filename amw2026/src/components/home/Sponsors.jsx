@@ -2,22 +2,22 @@ const Sponsors = () => {
   const sponsors = [
     { 
       name: "UNAM", 
-      logo: "/unam_logo.svg", 
+      logo: "unam_logo.svg", 
       url: "https://www.unam.mx/" 
     },
     { 
       name: "INAOE", 
-      logo: "/inaoe_logo.jpg", 
+      logo: "inaoe_logo.jpg", 
       url: "https://www.inaoep.mx/" 
     },
     { 
       name: "CIC IPN", 
-      logo: "/cic_ipn_logo.png", 
+      logo: "cic_ipn_logo.png", 
       url: "https://www.cic.ipn.mx/" 
     },
     { 
       name: "ITESM", 
-      logo: "/itesm_logo.svg", 
+      logo: "itesm_logo.svg", 
       url: "https://tec.mx/es" 
     }
   ];

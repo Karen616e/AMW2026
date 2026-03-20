@@ -66,7 +66,7 @@ const Venue = () => {
                     <div className="h-64 md:h-80 relative flex items-center justify-center overflow-hidden">
                         {/* IMAGEN DE LA FACULTAD */}
                         <img 
-                            src="/fi_unam.jpg" 
+                            src="fi_unam.jpg" 
                             alt="Facultad de Ingeniería UNAM"
                             className="absolute inset-0 w-full h-full object-cover"
                         />

@@ -1,9 +1,9 @@
 const Footer = () => {
   const sponsors = [
-    { name: "UNAM", logo: "/unam_logo.svg", url: "https://www.unam.mx/" },
-    { name: "INAOE", logo: "/inaoe_logo.jpg", url: "https://www.inaoep.mx/" },
-    { name: "CIC IPN", logo: "/cic_ipn_logo.png", url: "https://www.cic.ipn.mx/" },
-    { name: "ITESM", logo: "/itesm_logo.svg", url: "https://tec.mx/es" }
+    { name: "UNAM", logo: "unam_logo.svg", url: "https://www.unam.mx/" },
+    { name: "INAOE", logo: "inaoe_logo.jpg", url: "https://www.inaoep.mx/" },
+    { name: "CIC IPN", logo: "cic_ipn_logo.png", url: "https://www.cic.ipn.mx/" },
+    { name: "ITESM", logo: "itesm_logo.svg", url: "https://tec.mx/es" }
   ];
 
   return (
@@ -13,7 +13,7 @@ const Footer = () => {
         {/* 1. Marca */}
         <div className="flex items-center gap-3">
           <img 
-            src="/Logo 1.jpeg" 
+            src="Logo 1.jpeg" 
             alt="MCyRA Logo" 
             className="w-8 h-8 rounded-full object-cover border border-slate-700" 
           />

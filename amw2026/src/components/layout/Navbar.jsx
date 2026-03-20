@@ -53,7 +53,7 @@ const Navbar = () => {
           
           {/* Logo y Nombre - Subimos a text-2xl/3xl */}
           <Link to="/" className="flex items-center gap-3 group">
-            <img src="/Logo 1.jpeg" 
+            <img src="Logo 1.jpeg" 
               alt="MCyRA logo"
               className="rounded-full h-14 w-14 md:h-16 md:w-16 object-cover border-2 border-transparent group-hover:border-blue-500 transition-all shadow-sm" 
             />
