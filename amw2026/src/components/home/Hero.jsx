@@ -33,7 +33,7 @@ const Hero = () => {
         {/* Logo: Agregamos un borde sutil para que no flote "en el vacío" */}
         <div className="flex justify-center">
           <img
-            src="Logo 2.jpeg" 
+            src={`${import.meta.env.BASE_URL}Logo 2.jpeg`}
             alt="MCyRA logo"
             className="rounded-full h-64 w-64 md:h-80 md:w-80 object-cover border-8 border-white/10 dark:border-slate-800/50 shadow-2xl transition-transform duration-700 hover:rotate-3" 
           />

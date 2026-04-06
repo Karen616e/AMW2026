@@ -1,10 +1,10 @@
 const Submission = () => {
-  const guidelines = [
+  const guidelines = [/*
     { title: "Regular Papers", detail: "Up to 12 pages excluding references. Original research results." },
     { title: "Short Papers", detail: "Up to 6 pages excluding references. Work in progress or reports." },
     { title: "Format", detail: "Submissions must follow the CEUR-WS style (single-column)." },
     { title: "Review Process", detail: "Single-blind review. Authors' names should be visible." }
-  ];
+  */];
 
   return (
     <section id="submission" className="py-20 bg-white dark:bg-slate-900 transition-colors duration-300">
@@ -46,7 +46,7 @@ const Submission = () => {
         {/* --- RECUADRO INFERIOR DE PUBLICACIÓN Y TEMPLATES --- */}
         <div className="p-8 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-200 dark:border-slate-700 text-center transition-all hover:shadow-md">
           <p className="text-slate-600 dark:text-slate-300 mb-6 italic text-lg">
-            Accepted papers will be published in the <strong className="text-slate-800 dark:text-slate-200">CEUR Workshop Proceedings</strong>.
+            Accepted papers will be presented at the conference proceedings, which are planned to be published by <strong className="text-slate-800 dark:text-slate-200">Springer</strong> in a <strong className="text-slate-800 dark:text-slate-200">Computer Science Proceedings series</strong>.
           </p>
           <a 
             href="#" 

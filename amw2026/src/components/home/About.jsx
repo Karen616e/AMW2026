@@ -22,29 +22,17 @@ const About = () => {
           </div>
         </div>
 
-        {/* Misión y Summer School (Dos Columnas) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          <div className="group bg-white dark:bg-slate-900 p-10 rounded-3xl shadow-sm border border-slate-100 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-500 transition-all duration-300">
-            <div className="text-blue-600 mb-6 group-hover:scale-110 transition-transform duration-300">
+        {/* --- SECCIÓN DE ENFOQUE (Ahora en una sola columna centrada) --- */}
+        <div className="max-w-3xl mx-auto mb-20">
+          <div className="group bg-white dark:bg-slate-900 p-8 md:p-10 rounded-[2.5rem] shadow-sm border border-slate-100 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-500 transition-all duration-300 flex flex-col md:flex-row items-center gap-8">
+            <div className="text-blue-600 flex-shrink-0 group-hover:rotate-12 transition-transform duration-300">
               {/* Icono de Escudo SVG */}
-              <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
             </div>
-            <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed text-center md:text-left">
               MCyRA shifts the focus to the <strong className="text-slate-900 dark:text-white">rapidly evolving field of cybersecurity</strong>, addressing current challenges in protecting digital infrastructure and applications.
-            </p>
-          </div>
-
-          <div className="group bg-white dark:bg-slate-900 p-10 rounded-3xl shadow-sm border border-slate-100 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-500 transition-all duration-300">
-            <div className="text-blue-600 mb-6 group-hover:scale-110 transition-transform duration-300">
-              {/* Icono de Estudiantes SVG */}
-              <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
-              </svg>
-            </div>
-            <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-              The co-located <strong className="text-slate-900 dark:text-white">MCyRA Summer School</strong> offers students an invaluable opportunity to interact with experts and gain hands-on experience in cutting-edge practices.
             </p>
           </div>
         </div>

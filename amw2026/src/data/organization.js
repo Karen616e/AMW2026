@@ -19,7 +19,8 @@ export const organizationData = [
   {
     role: "Tutorial & Workshop Chair",
     members: [
-      { name: "Raúl Monroy", affiliation: "Tec de Monterrey", image: "https://via.placeholder.com/150" }
+      { name: "Raúl Monroy", affiliation: "Tec de Monterrey", image: "https://via.placeholder.com/150" },
+      { name: "Jorge Rodríguez", affiliation: "Tec de Monterrey", image: "https://via.placeholder.com/150" }
     ]
   },
   {
