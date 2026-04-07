@@ -82,16 +82,16 @@ const DatesTable = () => {
           })}
         </div>
 
-        {/* Separador Visual */}
+        {/* Separador Visual 
         <div className="flex items-center justify-center gap-4 mb-16 opacity-50">
           <div className="h-px w-24 bg-slate-300 dark:bg-slate-700"></div>
           <span className="text-slate-400 dark:text-slate-500 font-medium uppercase tracking-widest text-sm">Quick Reference</span>
           <div className="h-px w-24 bg-slate-300 dark:bg-slate-700"></div>
         </div>
 
-        {/* =========================================
+        {/* ========================================= 
             VISTA 2: TABLA ESTILIZADA
-        ========================================= */}
+        ========================================= 
         <div className="max-w-4xl mx-auto bg-white dark:bg-slate-900 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden">
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse">
@@ -140,7 +140,7 @@ const DatesTable = () => {
               </tbody>
             </table>
           </div>
-        </div>
+        </div>*/}
 
       </div>
     </section>

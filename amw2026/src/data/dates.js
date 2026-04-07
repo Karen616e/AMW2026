@@ -2,36 +2,36 @@ export const importantDates = [
     {
         event: "CFP and web page starting",
         date: "March 18, 2026",
-        status: "upcoming", // open, upcoming, past
+        status: "past", // open, upcoming, past
         note: ""
     },
 {
     event: "Full Paper Submission Deadline",
-    date: "May 10, 2026 with a possible one or two week extension period",
+    date: "May 24, 2026",
     status: "upcoming",
     note: ""
 },
 {
     event: "Notification of reviews",
-    date: "June 28, 2026",
+    date: "July 05, 2026",
     status: "upcoming",
     note: ""
 },
 {
     event: "Rebuttal period",
-    date: "July 12 – 29, 2026",
+    date: "July 06 – 12, 2026",
     status: "upcoming",
     note: ""
 },
 {
     event: "Author notification",
-    date: "August 9, 2026",
+    date: "July 26, 2026",
     status: "upcoming",
     note: ""
 },
 {
     event: "Camera ready",
-    date: "August 24, 2026",
+    date: "August 17, 2026",
     status: "upcoming",
     note: ""
 },
