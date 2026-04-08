@@ -37,8 +37,8 @@ export const importantDates = [
 },
 {
     event: "Registration *",
-    date: "From August 10 Until September 18, 2026",
+    date: "TBA",
     status: "upcoming",
-    note: "* Please check this link for applying for a VISA or entry permit (if applicable)."
+    note: "*Please check for an applying VISA or entry permit (if applicable)."
 }
 ];

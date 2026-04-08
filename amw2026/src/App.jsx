@@ -9,7 +9,7 @@ import AttendView from './views/AttendView';
 
 function App() {
   return (
-    <Router basename="/mcyra2026">
+    <Router>
       <ScrollToTop /> 
       <div className="flex flex-col min-h-screen">
         <Navbar />
