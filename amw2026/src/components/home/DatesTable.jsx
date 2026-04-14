@@ -1,4 +1,6 @@
+import React from 'react';
 import { importantDates } from '../../data/dates';
+import { Link } from 'react-router-dom';
 
 // Función auxiliar para iconos del timeline
 const getEventIcon = (eventName) => {
@@ -41,6 +43,14 @@ const DatesTable = () => {
             const isPast = item.status === 'past';
             const isOpen = item.status === 'open';
             const icon = getEventIcon(item.event);
+            
+            // Lógica para detectar si es la tarjeta de Registration
+            const isRegistration = item.event.toLowerCase().includes('registration');
+            
+            // USAMOS LINK EN LUGAR DE 'a'
+            const CardWrapper = isRegistration ? Link : 'div';
+            // USAMOS 'to' EN LUGAR DE 'href'
+           const wrapperProps = isRegistration ? { to: '/attend' } : {};
 
             return (
               <div key={idx} className="relative flex items-center justify-between md:justify-normal mb-12 last:mb-0 group">
@@ -57,15 +67,24 @@ const DatesTable = () => {
 
                 {/* Tarjeta */}
                 <div className={`w-full pl-20 md:pl-0 md:w-1/2 ${isEven ? 'md:pr-16 md:text-right' : 'md:ml-auto md:pl-16 text-left'}`}>
-                  <div className={`p-8 rounded-3xl shadow-sm border transition-all duration-300 hover:-translate-y-1 ${
-                    isOpen 
-                      ? 'bg-blue-600 text-white border-blue-600 shadow-xl shadow-blue-500/20' 
-                      : isPast
-                        ? 'bg-slate-50 dark:bg-slate-900/50 border-slate-200 dark:border-slate-800 opacity-70'
-                        : 'bg-white dark:bg-slate-900 border-slate-100 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-md'
-                  }`}>
+                  
+                  {/* Aquí implementamos la etiqueta dinámica */}
+                  <CardWrapper 
+                    {...wrapperProps}
+                    className={`block p-8 rounded-3xl shadow-sm border transition-all duration-300 hover:-translate-y-1 ${
+                      isRegistration ? 'cursor-pointer hover:shadow-lg hover:border-blue-400 dark:hover:border-blue-500' : ''
+                    } ${
+                      isOpen 
+                        ? 'bg-blue-600 text-white border-blue-600 shadow-xl shadow-blue-500/20' 
+                        : isPast
+                          ? 'bg-slate-50 dark:bg-slate-900/50 border-slate-200 dark:border-slate-800 opacity-70'
+                          : 'bg-white dark:bg-slate-900 border-slate-100 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-md'
+                    }`}
+                  >
                     <h4 className={`text-2xl font-black mb-3 ${isOpen ? 'text-white' : isPast ? 'text-slate-500 dark:text-slate-500 line-through' : 'text-slate-800 dark:text-white'}`}>
                       {item.event}
+                      {/* Agregamos una flechita visual solo para la tarjeta clickable */}
+                      {isRegistration && <span className="inline-block ml-2 text-blue-500">↗</span>}
                     </h4>
                     <p className={`text-lg font-bold ${isOpen ? 'text-blue-100' : isPast ? 'text-slate-400 dark:text-slate-600' : 'text-blue-600 dark:text-blue-400'}`}>
                       {item.date}
@@ -75,73 +94,13 @@ const DatesTable = () => {
                         {item.note}
                       </p>
                     )}
-                  </div>
+                  </CardWrapper>
+
                 </div>
               </div>
             );
           })}
         </div>
-
-        {/* Separador Visual 
-        <div className="flex items-center justify-center gap-4 mb-16 opacity-50">
-          <div className="h-px w-24 bg-slate-300 dark:bg-slate-700"></div>
-          <span className="text-slate-400 dark:text-slate-500 font-medium uppercase tracking-widest text-sm">Quick Reference</span>
-          <div className="h-px w-24 bg-slate-300 dark:bg-slate-700"></div>
-        </div>
-
-        {/* ========================================= 
-            VISTA 2: TABLA ESTILIZADA
-        ========================================= 
-        <div className="max-w-4xl mx-auto bg-white dark:bg-slate-900 rounded-3xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden">
-          <div className="overflow-x-auto">
-            <table className="w-full text-left border-collapse">
-              <thead>
-                <tr className="bg-slate-50 dark:bg-slate-800/50 border-b border-slate-200 dark:border-slate-800">
-                  <th className="py-5 px-6 font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider text-sm">Event</th>
-                  <th className="py-5 px-6 font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider text-sm">Date</th>
-                  <th className="py-5 px-6 font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider text-sm">Notes</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
-                {importantDates.map((item, idx) => {
-                  const isPast = item.status === 'past';
-                  const isOpen = item.status === 'open';
-                  
-                  return (
-                    <tr 
-                      key={idx} 
-                      className={`transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/50 ${
-                        isOpen ? 'bg-blue-50/50 dark:bg-blue-900/10' : ''
-                      } ${isPast ? 'opacity-60' : ''}`}
-                    >
-                      <td className="py-5 px-6">
-                        <span className={`font-bold ${
-                          isOpen ? 'text-blue-700 dark:text-blue-400' : isPast ? 'text-slate-500 line-through' : 'text-slate-800 dark:text-white'
-                        }`}>
-                          {item.event}
-                        </span>
-                        {isOpen && (
-                          <span className="ml-3 inline-block text-[10px] font-black uppercase tracking-widest bg-blue-600 text-white px-2 py-0.5 rounded-full">
-                            Active
-                          </span>
-                        )}
-                      </td>
-                      <td className={`py-5 px-6 font-medium ${
-                        isPast ? 'text-slate-500' : 'text-slate-600 dark:text-slate-300'
-                      }`}>
-                        {item.date}
-                      </td>
-                      <td className="py-5 px-6 text-sm text-slate-500 dark:text-slate-400 italic">
-                        {item.note || '-'}
-                      </td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
-        </div>*/}
-
       </div>
     </section>
   );

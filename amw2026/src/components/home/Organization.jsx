@@ -1,13 +1,6 @@
 import React from 'react';
 import { organizationData } from '../../data/organization';
 
-// Función para obtener las iniciales del nombre 
-const getInitials = (name) => {
-  const parts = name.trim().split(' ');
-  if (parts.length === 1) return parts[0].charAt(0).toUpperCase();
-  return (parts[0].charAt(0) + parts[1].charAt(0)).toUpperCase();
-};
-
 const Organization = () => {
   return (
     <section id="organization" className="py-24 bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
@@ -53,13 +46,6 @@ const Organization = () => {
                       >
                         {/* Decoración de fondo sutil */}
                         <div className="absolute top-0 right-0 w-24 h-24 bg-blue-50 dark:bg-blue-900/10 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
-                        
-                        {/* Avatar Tipográfico */}
-                        <div className="relative mb-6 inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-slate-50 dark:bg-slate-900 border-2 border-slate-100 dark:border-slate-700 group-hover:bg-blue-600 group-hover:border-blue-600 transition-colors duration-300 shadow-sm z-10">
-                          <span className="text-2xl font-black text-blue-600 dark:text-blue-400 group-hover:text-white transition-colors">
-                            {getInitials(member.name)}
-                          </span>
-                        </div>
                         
                         <div className="relative z-10">
                           <h4 className="font-bold text-xl text-slate-800 dark:text-white mb-2 group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors">
