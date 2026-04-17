@@ -18,10 +18,7 @@ const Submission = () => {
           <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed mb-6">
             Submissions should be prepared following the authors' guidelines provided by <strong className="text-slate-900 dark:text-white">Springer LNCS series</strong>. Papers will be submitted and presented at the conference in English. All submissions will be blind peer-reviewed. The final acceptance will be based on a peer review of the full-length paper.
           </p>
-          <div className="flex items-center gap-3 py-3 px-4 bg-white/50 dark:bg-slate-800/50 rounded-lg border border-blue-200 dark:border-blue-800/50 w-fit">
-            <span className="font-bold text-slate-800 dark:text-slate-200">Submission site:</span>
-            <span className="bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded">TBA</span>
-          </div>
+         
         </div>
 
         {/* --- GRID DE LINEAMIENTOS --- */}

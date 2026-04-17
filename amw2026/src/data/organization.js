@@ -27,7 +27,7 @@ export const organizationData = [
     role: "Consortium Chairs",
     members: [
       { name: "Gina Gallegos", affiliation: "CIC-IPN", image: "https://via.placeholder.com/150" },
-      { name: "Lil Rodríguez", affiliation: "INAOE", image: "https://via.placeholder.com/150" }
+      { name: "Lil Rodríguez", affiliation: "Universidad Juárez Autónoma de Tabasco", image: "https://via.placeholder.com/150" }
     ]
   },
   {
@@ -36,8 +36,8 @@ export const organizationData = [
       { name: "Moisés Salinas Rosales", affiliation: "CIC-IPN" },
       { name: "Luis Julián Domínguez Pérez", affiliation: "ITESO" },
       { name: "Laura Margarita Rodríguez Peralta", affiliation: "UPAEP" },
-      { name: "Alejandra Silva Trujillo", affiliation: "UASLP" },
-      { name: "Izlian Orea Flores", affiliation: "UPIITA-IPN" },
+      { name: "Alejandra Guadalupe Silva Trujillo", affiliation: "UASLP" },
+      { name: "Izlian Orea Flores", affiliation: "CIC-IPN" },
       { name: "Manuel Cedillo Hernández", affiliation: "ESIME-Culhuacán" },
       { name: "Raúl Acosta Bermejo", affiliation: "CIC-IPN" },
       { name: "Víctor Manuel Morales Rocha", affiliation: "UACJ" }

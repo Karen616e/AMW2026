@@ -97,11 +97,11 @@ const CallForPapers = () => {
             <p className="text-blue-100 mb-10 text-lg max-w-2xl mx-auto">
               Join us in Mexico City and present your research to a global audience of cybersecurity experts.
             </p>
-            <p className="text-blue-100 mb-10 text-lg max-w-2xl mx-auto">
-              CMT submission link will be coming shortly
-            </p>
-            <a 
-              href="#submission" 
+            
+           <a 
+              href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FMCyRA2026" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-white text-blue-600 px-10 py-4 rounded-full font-black text-xl hover:bg-blue-50 transition-all shadow-lg hover:scale-105 active:scale-95"
             >
               Submit Your Research
@@ -109,7 +109,6 @@ const CallForPapers = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
             </a>
-
            <p className="text-blue-100 mt-12 mb-10 text-lg max-w-2xl mx-auto">
               The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
             </p>

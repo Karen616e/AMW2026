@@ -6,6 +6,7 @@ import HomeView from './views/HomeView';
 import SubmissionView from './views/SubmissionView';
 import CommitteeView from './views/CommitteeView';
 import AttendView from './views/AttendView';
+import VenueView from './views/VenueView';
 
 function App() {
   return (
