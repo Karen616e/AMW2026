@@ -8,6 +8,7 @@ import CommitteeView from './views/CommitteeView';
 import AttendView from './views/AttendView';
 import VenueView from './views/VenueView';
 
+
 function App() {
   return (
     <Router>
@@ -20,6 +21,7 @@ function App() {
             <Route path="/cfp" element={<SubmissionView />} />
             <Route path="/committee" element={<CommitteeView />} />
             <Route path="/attend" element={<AttendView />} />
+            <Route path="/venue" element={<VenueView />} /> 
           </Routes>
         </main>
         <Footer />
