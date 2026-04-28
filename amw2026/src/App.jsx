@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import ScrollToTop from './components/layout/ScrollToTop'; 
@@ -7,7 +7,7 @@ import SubmissionView from './views/SubmissionView';
 import CommitteeView from './views/CommitteeView';
 import AttendView from './views/AttendView';
 import VenueView from './views/VenueView';
-
+import CallForTutorials from './components/home/CallForTutorials';
 
 function App() {
   return (
@@ -19,9 +19,10 @@ function App() {
           <Routes>
             <Route path="/" element={<HomeView />} />
             <Route path="/cfp" element={<SubmissionView />} />
+            <Route path="/tutorials" element={<CallForTutorials />} />
             <Route path="/committee" element={<CommitteeView />} />
             <Route path="/attend" element={<AttendView />} />
-            <Route path="/venue" element={<VenueView />} /> 
+            <Route path="/venue" element={<VenueView />} />
           </Routes>
         </main>
         <Footer />
