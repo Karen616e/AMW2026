@@ -45,7 +45,7 @@ const Submission = () => {
             Accepted papers will be presented at the conference proceedings, which are planned to be published by <strong className="text-slate-800 dark:text-slate-200">Springer</strong> in a <strong className="text-slate-800 dark:text-slate-200">Computer Science Proceedings series</strong>.
           </p>
           <a 
-              href="https://share.google/BVNsBtJS6erJuL5dH" 
+              href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-blue-600 dark:bg-blue-500 text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-500/30 hover:-translate-y-0.5 active:scale-95"
