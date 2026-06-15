@@ -43,7 +43,7 @@ const Navbar = () => {
       dropdown: [
         { name: 'Call for Papers', path: '/cfp' },
         { name: 'Call for Tutorials', path: '/tutorials' },
-        { name: 'Student Consortium', path: '#', tba: true }
+        { name: 'Call for Student Consortium', path: '/consortium' }
       ]
     },
     { name: 'Committee', path: '/committee' },
