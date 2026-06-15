@@ -1,5 +1,12 @@
 export const registrationFees = [
-  { type: "Early Bird (Before June)", student: "$150 USD", regular: "$300 USD" },
-  { type: "Regular (Before June)", student: "$200 USD", regular: "$400 USD" },
-  { type: "On-site", student: "$250 USD", regular: "$500 USD" },
+  { 
+    type: "Early Bird (Before August)", 
+    student: "$150 USD", 
+    regular: "$200 USD" 
+  },
+  { 
+    type: "Late (August and after)", 
+    student: "$300 USD", 
+    regular: "$315 USD" 
+  }
 ];

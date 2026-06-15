@@ -7,7 +7,7 @@ export const importantDates = [
     },
 {
     event: "Full Paper Submission Deadline",
-    date: "June 07, 2026",
+    date: "June 14, 2026",
     status: "upcoming",
     note: ""
 },

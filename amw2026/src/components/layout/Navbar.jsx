@@ -60,7 +60,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         <div className="flex justify-between items-center h-16">
           
-          <Link to="/" className="flex items-center gap-3 group">
+          {/* Logo y Nombre */}
+          <Link to="/" onClick={() => setIsOpen(false)} className="flex items-center gap-3 group">
             <img src="Logo 1.jpeg" 
               alt="MCyRA logo"
               className="rounded-full h-14 w-14 md:h-16 md:w-16 object-cover border-2 border-transparent group-hover:border-blue-500 transition-all shadow-sm" 
@@ -73,6 +74,7 @@ const Navbar = () => {
           </Link>
           
           <div className="flex items-center gap-4 md:gap-10">
+            {/* --- MENÚ DE ESCRITORIO --- */}
             <div className="hidden lg:flex space-x-12 items-center">
               {menuItems.map((item) => {
                 const isActive = location.pathname === item.path || 
@@ -125,27 +127,115 @@ const Navbar = () => {
               })}
             </div>
 
-            <button 
-              onClick={toggleTheme}
-              className={`p-3 rounded-full transition-all hover:scale-110 active:scale-90 shadow-sm ${
-                isSolid 
-                  ? 'text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800' 
-                  : 'text-white hover:bg-white/20'
-              }`}
-            >
-              {theme === 'dark' ? (
-                <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
-              ) : (
-                <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-                </svg>
-              )}
-            </button>
+            {/* --- CONTROLES (Theme & Mobile Toggle) --- */}
+            <div className="flex items-center gap-2">
+              {/* Botón de Modo Oscuro */}
+              <button 
+                onClick={toggleTheme}
+                className={`p-3 rounded-full transition-all hover:scale-110 active:scale-90 shadow-sm ${
+                  isSolid 
+                    ? 'text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800' 
+                    : 'text-white hover:bg-white/20'
+                }`}
+                aria-label="Toggle Dark Mode"
+              >
+                {theme === 'dark' ? (
+                  <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                  </svg>
+                ) : (
+                  <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                  </svg>
+                )}
+              </button>
+
+              {/* Botón de Hamburguesa (Solo Móvil) */}
+              <button 
+                onClick={() => setIsOpen(!isOpen)} 
+                className={`lg:hidden p-2 rounded-lg transition-colors ${
+                  isSolid 
+                    ? 'text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800' 
+                    : 'text-white hover:bg-white/20'
+                }`}
+                aria-label="Toggle Menu"
+              >
+                {isOpen ? (
+                  <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                ) : (
+                  <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                )}
+              </button>
+            </div>
+
           </div>
         </div>
       </div>
+
+      {/* --- MENÚ MÓVIL DESPLEGABLE --- */}
+      {isOpen && (
+        <div className="lg:hidden bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 shadow-2xl absolute w-full left-0 top-full">
+          <div className="px-4 pt-4 pb-8 space-y-3 max-h-[80vh] overflow-y-auto">
+            {menuItems.map((item) => {
+              const isActive = location.pathname === item.path || 
+                               (item.dropdown && item.dropdown.some(d => location.pathname === d.path && !d.tba));
+              
+              return (
+                <div key={item.name} className="flex flex-col">
+                  {item.dropdown ? (
+                    // Elemento con Dropdown en Móvil
+                    <div className="mb-2">
+                      <div className="px-4 py-3 text-sm font-black text-blue-600 dark:text-blue-400 uppercase tracking-widest">
+                        {item.name}
+                      </div>
+                      <div className="flex flex-col space-y-1 pl-4 border-l-2 border-slate-100 dark:border-slate-800 ml-4 mt-1">
+                        {item.dropdown.map((dropItem) => (
+                          dropItem.tba ? (
+                            <div key={dropItem.name} className="flex items-center justify-between px-4 py-3 text-lg font-bold text-slate-400 dark:text-slate-600 cursor-not-allowed select-none">
+                              <span>{dropItem.name}</span>
+                              <span className="text-xs bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500 px-2 py-1 rounded-full uppercase tracking-widest">TBA</span>
+                            </div>
+                          ) : (
+                            <Link
+                              key={dropItem.name}
+                              to={dropItem.path}
+                              onClick={() => setIsOpen(false)}
+                              className={`block px-4 py-3 text-lg font-bold rounded-xl transition-all ${
+                                location.pathname === dropItem.path 
+                                  ? 'bg-blue-50 text-blue-700 dark:bg-slate-800 dark:text-blue-400' 
+                                  : 'text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800'
+                              }`}
+                            >
+                              {dropItem.name}
+                            </Link>
+                          )
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    // Elemento normal en Móvil
+                    <Link
+                      to={item.path}
+                      onClick={() => setIsOpen(false)}
+                      className={`block px-4 py-4 text-xl font-bold rounded-xl transition-all ${
+                        isActive && !item.dropdown
+                          ? 'bg-blue-600 text-white dark:bg-blue-600' 
+                          : 'text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800'
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
