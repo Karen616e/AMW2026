@@ -2,9 +2,9 @@ import React from 'react';
 
 const CallForStudentConsortium = () => {
   const dates = [
-    { event: "Submission Deadline", date: "July 13, 2026", icon: "📝" },
-    { event: "Notification of Acceptance", date: "August 28, 2026", icon: "✉️" },
-    { event: "Final Camera-Ready", date: "September 11, 2026", icon: "📸" },
+    { event: "Submission Deadline", date: "July 27, 2026", icon: "📝" },
+    { event: "Notification of Acceptance", date: "September 11, 2026", icon: "✉️" },
+    { event: "Final Camera-Ready", date: "September 25, 2026", icon: "📸" },
     { event: "Presentation Session", date: "Nov 9 - 10, 2026", icon: "🎤" }
   ];
 

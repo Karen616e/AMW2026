@@ -13,25 +13,25 @@ export const importantDates = [
 },
 {
     event: "Notification of reviews",
-    date: "July 05, 2026",
+    date: "July 12, 2026",
     status: "upcoming",
     note: ""
 },
 {
     event: "Rebuttal period",
-    date: "July 06 – 12, 2026",
+    date: "July 12 – 21, 2026",
     status: "upcoming",
     note: ""
 },
 {
     event: "Author notification",
-    date: "July 26, 2026",
+    date: "August 02, 2026",
     status: "upcoming",
     note: ""
 },
 {
     event: "Camera ready",
-    date: "August 17, 2026",
+    date: "August 24, 2026",
     status: "upcoming",
     note: ""
 },
