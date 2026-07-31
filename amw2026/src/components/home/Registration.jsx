@@ -268,7 +268,7 @@ const Registration = () => {
             <div className="p-6 md:px-10 md:pt-10 md:pb-6 flex-shrink-0 border-b border-slate-100 dark:border-slate-700 relative">
               <button 
                 onClick={() => setIsModalOpen(false)}
-                className="absolute top-6 right-6 text-slate-400 hover:text-slate-600 dark:hover:text-white transition-colors bg-slate-100 dark:bg-slate-700 rounded-full p-2"
+                className="absolute top-6 right-6 text-slate-400 hover:text-slate-600 dark:hover:text-white transition-colors bg-slate-100 dark:bg-slate-700 rounded-full p-2 z-10"
                 aria-label="Close modal"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/></svg>
@@ -281,15 +281,14 @@ const Registration = () => {
             {/* Contenedor desplazable para el formulario de Tally */}
             <div className="flex-grow overflow-y-auto p-6 md:p-10 w-full relative">
               <iframe 
-                // Añadimos el selectedPlan a la URL por si configuras un campo oculto "plan" en Tally
-                data-tally-src={`https://tally.so/embed/WOXpNN?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&plan=${encodeURIComponent(selectedPlan)}`} 
+                data-tally-src={`https://tally.so/embed/ZjXb0y?alignLeft=1&transparentBackground=1&dynamicHeight=1&plan=${encodeURIComponent(selectedPlan)}`} 
                 loading="lazy" 
                 width="100%" 
-                height="359" 
+                height="1075" 
                 frameBorder="0" 
                 marginHeight="0" 
                 marginWidth="0" 
-                title="Registration"
+                title="Mexican Conference on Cybersecurity Research and Applications"
               ></iframe>
             </div>
 
