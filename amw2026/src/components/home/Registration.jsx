@@ -24,7 +24,6 @@ const Registration = () => {
   };
 
   // --- MAGIA DE TALLY PARA REACT ---
-  // Este useEffect se encarga de cargar el script de Tally solo cuando el modal se abre
   useEffect(() => {
     if (isModalOpen) {
       const script = document.createElement('script');
@@ -32,14 +31,12 @@ const Registration = () => {
       script.async = true;
       document.body.appendChild(script);
 
-      // Una vez que el script carga, le decimos a Tally que busque el iframe y lo ajuste
       script.onload = () => {
         if (window.Tally) {
           window.Tally.loadEmbeds();
         }
       };
 
-      // Limpiamos el script si el modal se cierra para mantener la memoria limpia
       return () => {
         if (document.body.contains(script)) {
           document.body.removeChild(script);
@@ -265,23 +262,23 @@ const Registration = () => {
           >
             
             {/* Cabecera del modal */}
-            <div className="p-6 md:px-10 md:pt-10 md:pb-6 flex-shrink-0 border-b border-slate-100 dark:border-slate-700 relative">
+            <div className="p-6 md:px-10 md:pt-10 md:pb-6 flex-shrink-0 border-b border-slate-100 dark:border-slate-700 relative z-10">
               <button 
                 onClick={() => setIsModalOpen(false)}
-                className="absolute top-6 right-6 text-slate-400 hover:text-slate-600 dark:hover:text-white transition-colors bg-slate-100 dark:bg-slate-700 rounded-full p-2 z-10"
+                className="absolute top-6 right-6 text-slate-400 hover:text-slate-600 dark:hover:text-white transition-colors bg-slate-100 dark:bg-slate-700 rounded-full p-2 z-20"
                 aria-label="Close modal"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/></svg>
               </button>
               
-              <h3 className="text-2xl font-black text-slate-800 dark:text-white mb-1">Registration Form</h3>
+              <h3 className="text-2xl font-black text-slate-800 dark:text-white mb-1 pr-10">Registration Form</h3>
               <p className="text-slate-500 dark:text-slate-400 text-sm font-medium">Selected Plan: <strong className="text-blue-600 dark:text-blue-400">{selectedPlan}</strong></p>
             </div>
 
-            {/* Contenedor desplazable para el formulario de Tally */}
-            <div className="flex-grow overflow-y-auto p-6 md:p-10 w-full relative">
+            {/* Contenedor desplazable para el formulario de Tally (Sin padding y con bordes inferiores redondeados) */}
+            <div className="flex-grow overflow-y-auto w-full relative rounded-b-3xl">
               <iframe 
-                data-tally-src={`https://tally.so/embed/ZjXb0y?alignLeft=1&transparentBackground=1&dynamicHeight=1&plan=${encodeURIComponent(selectedPlan)}`} 
+                data-tally-src={`https://tally.so/embed/ZjXb0y?alignLeft=1&dynamicHeight=1&plan=${encodeURIComponent(selectedPlan)}`} 
                 loading="lazy" 
                 width="100%" 
                 height="1075" 
