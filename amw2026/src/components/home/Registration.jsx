@@ -123,7 +123,7 @@ const Registration = () => {
               
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 text-sm font-bold w-fit mb-6 border border-amber-200 dark:border-amber-800/50">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                August and after
+                August 7th and after
               </div>
 
               <p className="text-slate-500 dark:text-slate-400 font-medium mb-8">For researchers, academics, and industry professionals.</p>
@@ -156,14 +156,14 @@ const Registration = () => {
 
         {/* ==========================================
             SECCIÓN 2: ESTUDIANTES (Blanco -> Azul)
-            ========================================== */}
+            ========================================== 
         <div className="mb-16">
           <h3 className="text-3xl font-black text-slate-800 dark:text-white mb-8 text-center uppercase tracking-widest">
             For Students
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             
-            {/* --- STUDENT EARLY (White) --- */}
+             --- STUDENT EARLY (White) --- 
             <div className="flex flex-col bg-white dark:bg-slate-800 rounded-3xl p-8 md:p-10 border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 relative group">
               <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
                 <span className="text-6xl">⏰</span>
@@ -199,7 +199,7 @@ const Registration = () => {
               </button>
             </div>
 
-            {/* --- STUDENT LATE (Blue) --- */}
+            {/* --- STUDENT LATE (Blue) --- 
             <div className="flex flex-col bg-blue-600 dark:bg-blue-700 rounded-3xl p-8 md:p-10 shadow-2xl hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden text-white">
               <div className="absolute -top-24 -right-24 w-64 h-64 bg-white opacity-5 rounded-full blur-2xl"></div>
               
@@ -243,7 +243,7 @@ const Registration = () => {
             </div>
 
           </div>
-        </div>
+        </div>*/}
 
       </div>
 
@@ -261,7 +261,6 @@ const Registration = () => {
             onClick={(e) => e.stopPropagation()}
           >
             
-            {/* Cabecera del modal */}
             <div className="p-6 md:px-10 md:pt-10 md:pb-6 flex-shrink-0 border-b border-slate-100 dark:border-slate-700 relative z-10">
               <button 
                 onClick={() => setIsModalOpen(false)}
@@ -275,18 +274,17 @@ const Registration = () => {
               <p className="text-slate-500 dark:text-slate-400 text-sm font-medium">Selected Plan: <strong className="text-blue-600 dark:text-blue-400">{selectedPlan}</strong></p>
             </div>
 
-            {/* Contenedor desplazable para el formulario de Tally (Sin padding y con bordes inferiores redondeados) */}
             <div className="flex-grow overflow-y-auto w-full relative rounded-b-3xl">
               <iframe 
-                data-tally-src={`https://tally.so/embed/ZjXb0y?alignLeft=1&dynamicHeight=1&plan=${encodeURIComponent(selectedPlan)}`} 
-                loading="lazy" 
-                width="100%" 
-                height="1075" 
-                frameBorder="0" 
-                marginHeight="0" 
-                marginWidth="0" 
-                title="Mexican Conference on Cybersecurity Research and Applications"
-              ></iframe>
+                  data-tally-src={`https://tally.so/embed/eqGA4k?alignLeft=1&dynamicHeight=1&plan=${encodeURIComponent(selectedPlan)}`} 
+                  loading="lazy" 
+                  width="100%" 
+                  height="1075" 
+                  frameBorder="0" 
+                  marginHeight="0" 
+                  marginWidth="0" 
+                  title="Mexican Conference on Cybersecurity Research and Applications"
+                ></iframe>
             </div>
 
           </div>
