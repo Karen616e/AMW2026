@@ -134,7 +134,7 @@ const Registration = () => {
                     <span
                       id="early-payment-policy-tooltip"
                       role="tooltip"
-                      className="pointer-events-none absolute bottom-full left-1/2 z-20 mb-3 w-72 -translate-x-1/2 rounded-xl bg-slate-100 px-4 py-3 text-center text-xs font-medium leading-relaxed text-slate-900 opacity-0 shadow-xl transition-opacity duration-200 group-hover:opacity-100 dark:bg-slate-200"
+                      className="pointer-events-none mt-2 block text-left text-[10px] font-medium leading-snug text-black opacity-100 transition-opacity duration-200 sm:absolute sm:bottom-full sm:left-1/2 sm:mb-3 sm:w-72 sm:-translate-x-1/2 sm:rounded-xl sm:bg-slate-100 sm:px-4 sm:py-3 sm:text-center sm:text-xs sm:leading-relaxed sm:text-slate-900 sm:shadow-xl sm:opacity-0 sm:group-hover:opacity-100 sm:group-focus-within:opacity-100 dark:text-slate-300 sm:dark:bg-slate-200 sm:dark:text-slate-900"
                     >
                       Please read and accept the Registration Payment Policy above to enable author registration.
                     </span>
@@ -186,7 +186,7 @@ const Registration = () => {
                   <span
                     id="late-payment-policy-tooltip"
                     role="tooltip"
-                    className="pointer-events-none absolute bottom-full left-1/2 z-20 mb-3 w-72 -translate-x-1/2 rounded-xl bg-slate-100 px-4 py-3 text-center text-xs font-medium leading-relaxed text-slate-900 opacity-0 shadow-xl transition-opacity duration-200 group-hover:opacity-100 dark:bg-slate-200"
+                    className="pointer-events-none mt-2 block text-left text-[10px] font-medium leading-snug text-black opacity-100 transition-opacity duration-200 sm:absolute sm:bottom-full sm:left-1/2 sm:mb-3 sm:w-72 sm:-translate-x-1/2 sm:rounded-xl sm:bg-slate-100 sm:px-4 sm:py-3 sm:text-center sm:text-xs sm:leading-relaxed sm:text-slate-900 sm:shadow-xl sm:opacity-0 sm:group-hover:opacity-100 sm:group-focus-within:opacity-100 dark:text-slate-300 sm:dark:bg-slate-200 sm:dark:text-slate-900"
                   >
                     Please read and accept the Registration Payment Policy above to enable author registration.
                   </span>
