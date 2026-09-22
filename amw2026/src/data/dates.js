@@ -26,7 +26,7 @@ export const importantDates = [
 {
     event: "Author notification",
     date: "September 18, 2026",
-    status: "upcoming",
+    status: "past",
     note: ""
 },
 {
