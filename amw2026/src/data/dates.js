@@ -8,30 +8,30 @@ export const importantDates = [
 {
     event: "Full Paper Submission Deadline",
     date: "June 14, 2026",
-    status: "upcoming",
+    status: "past",
     note: ""
 },
 {
     event: "Notification of reviews",
     date: "July 12, 2026",
-    status: "upcoming",
+    status: "past",
     note: ""
 },
 {
     event: "Rebuttal period",
     date: "July 12 – 21, 2026",
-    status: "upcoming",
+    status: "past",
     note: ""
 },
 {
     event: "Author notification",
-    date: "August 02, 2026",
+    date: "September 18, 2026",
     status: "upcoming",
     note: ""
 },
 {
     event: "Camera ready",
-    date: "August 24, 2026",
+    date: "October 09, 2026",
     status: "upcoming",
     note: ""
 },
