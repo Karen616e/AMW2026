@@ -1,4 +1,5 @@
 import { venueInfo } from '../../data/venueData';
+import { primaryActionButtonClassName } from '../../data/buttonStyles';
 
 const Venue = () => {
     return (
@@ -92,7 +93,7 @@ const Venue = () => {
                             href="https://www.google.com/maps/place/Facultad+de+Ingenier%C3%ADa+UNAM/@19.3313883,-99.1872813,1075m/data=!3m3!1e3!4b1!5s0x85ce0001577b6221:0x74dc9613abb964b1!4m6!3m5!1s0x85ce00015be0a713:0x3fc11681a8244370!8m2!3d19.3313833!4d-99.1847064!16s%2Fm%2F027vtty?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-3 bg-blue-600 dark:bg-blue-500 text-white px-8 py-3.5 rounded-full text-base font-bold hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-500/30 hover:-translate-y-1"
+                            className={primaryActionButtonClassName}
                         >
                             Open in Google Maps
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
