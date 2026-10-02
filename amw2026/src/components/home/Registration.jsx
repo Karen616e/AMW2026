@@ -6,6 +6,7 @@ const Registration = () => {
   const currentFee = registrationFees[0];
   const upcomingFees = registrationFees.slice(1);
   const lateFee = upcomingFees[0] || currentFee;
+  const isEarlyRegistrationClosed = new Date() >= new Date(2026, 9, 1);
 
   // Estado para controlar si el modal está abierto o cerrado
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -85,7 +86,7 @@ const Registration = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             
             {/* --- AUTHOR EARLY (Blue) --- */}
-            <div className="flex flex-col bg-blue-600 dark:bg-blue-700 rounded-3xl p-8 md:p-10 shadow-2xl hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden text-white group">
+            <div className={`flex flex-col rounded-3xl p-8 md:p-10 transition-all duration-300 relative overflow-hidden group ${isEarlyRegistrationClosed ? 'bg-slate-100 dark:bg-slate-800 shadow-sm grayscale opacity-80 cursor-not-allowed' : 'bg-blue-600 dark:bg-blue-700 shadow-2xl hover:-translate-y-2 text-white'}`}>
               <div className="absolute -top-24 -right-24 w-64 h-64 bg-white opacity-5 rounded-full blur-2xl"></div>
               <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity z-0">
                 <span className="text-6xl">⏰</span>
@@ -93,10 +94,10 @@ const Registration = () => {
               
               <div className="relative z-10 flex-grow flex flex-col">
                 <div className="flex justify-between items-start mb-3">
-                  <h4 className="text-2xl font-bold">Early</h4>
+                  <h4 className={`text-2xl font-bold ${isEarlyRegistrationClosed ? 'text-slate-500 dark:text-slate-400 line-through' : ''}`}>Early</h4>
                 </div>
 
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/50 text-blue-50 text-sm font-bold w-fit mb-6 backdrop-blur-sm border border-blue-400/30">
+                <div className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-bold w-fit mb-6 backdrop-blur-sm ${isEarlyRegistrationClosed ? 'bg-slate-200 dark:bg-slate-700 text-slate-500 dark:text-slate-400 border border-slate-300 dark:border-slate-600 line-through' : 'bg-blue-500/50 text-blue-50 border border-blue-400/30'}`}>
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                   Before September 30th
                 </div>
@@ -105,17 +106,17 @@ const Registration = () => {
                 
                 <div className="mb-8">
                   <div className="flex items-end gap-2 mb-2">
-                    <span className="text-5xl font-black">{currentFee.regular}</span>
+                    <span className={`text-5xl font-black ${isEarlyRegistrationClosed ? 'text-slate-500 dark:text-slate-400 line-through' : ''}`}>{currentFee.regular}</span>
                   </div>
                 </div>
 
                 <ul className="space-y-4 mb-10 flex-grow">
                   {includedFeatures.map((feature, idx) => (
                     <li key={idx} className="flex items-start gap-3">
-                      <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"/></svg>
+                      <div className={`w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 ${isEarlyRegistrationClosed ? 'bg-slate-300 dark:bg-slate-600' : 'bg-white/20'}`}>
+                        <svg className={`w-4 h-4 ${isEarlyRegistrationClosed ? 'text-slate-500 dark:text-slate-300' : 'text-white'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"/></svg>
                       </div>
-                      <span className="font-medium text-blue-50">{feature}</span>
+                      <span className={`font-medium ${isEarlyRegistrationClosed ? 'text-slate-500 dark:text-slate-400' : 'text-blue-50'}`}>{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -123,14 +124,14 @@ const Registration = () => {
                 <div className="relative group">
                   <button 
                     type="button"
-                    disabled={!hasAgreedToPaymentPolicy}
-                    aria-describedby={!hasAgreedToPaymentPolicy ? 'early-payment-policy-tooltip' : undefined}
+                    disabled={isEarlyRegistrationClosed || !hasAgreedToPaymentPolicy}
+                    aria-describedby={isEarlyRegistrationClosed ? undefined : !hasAgreedToPaymentPolicy ? 'early-payment-policy-tooltip' : undefined}
                     onClick={() => handleOpenModal('Author - Early')}
-                    className={`w-full py-4 rounded-xl font-bold text-lg bg-white text-blue-700 transition-colors duration-300 shadow-lg ${hasAgreedToPaymentPolicy ? 'hover:bg-blue-50' : 'cursor-not-allowed opacity-50'}`}
+                    className={`w-full py-4 rounded-xl font-bold text-lg transition-colors duration-300 shadow-lg ${isEarlyRegistrationClosed ? 'bg-slate-300 dark:bg-slate-700 text-slate-500 dark:text-slate-400 line-through cursor-not-allowed' : `bg-white text-blue-700 ${hasAgreedToPaymentPolicy ? 'hover:bg-blue-50' : 'cursor-not-allowed opacity-50'}`}`}
                   >
-                    Register as Author
+                    {isEarlyRegistrationClosed ? 'Registration closed' : 'Register as Author'}
                   </button>
-                  {!hasAgreedToPaymentPolicy && (
+                  {!isEarlyRegistrationClosed && !hasAgreedToPaymentPolicy && (
                     <span
                       id="early-payment-policy-tooltip"
                       role="tooltip"

@@ -48,7 +48,8 @@ const Navbar = () => {
     },
     { name: 'Committee', path: '/committee' },
     { name: 'Attendance', path: '/attend' },
-    { name: 'Venue', path: '/venue' }
+    { name: 'Venue', path: '/venue' },
+    { name: 'Program', path: '/program' }
   ];
 
   return (

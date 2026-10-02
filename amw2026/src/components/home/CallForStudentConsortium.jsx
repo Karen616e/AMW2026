@@ -5,7 +5,7 @@ const CallForStudentConsortium = () => {
     { event: "Submission Deadline", date: "August 28, 2026", icon: "📝" },
     { event: "Notification of Acceptance", date: "September 11, 2026", icon: "✉️" },
     { event: "Final Camera-Ready", date: "September 25, 2026", icon: "📸" },
-    { event: "Presentation Session", date: "Nov 9 - 10, 2026", icon: "🎤" }
+    { event: "Presentation Session", date: "Nov 10, 2026", icon: "🎤" }
   ];
 
   const guidelines = [
@@ -33,7 +33,7 @@ const CallForStudentConsortium = () => {
           </p>
           <div className="inline-flex items-center gap-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-6 py-3 rounded-full font-bold">
             <svg className="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-            Ciudad Universitaria, UNAM, in Mexico City — November 9 and 10, 2026
+            Ciudad Universitaria, UNAM, in Mexico City — November 10, 2026
           </div>
         </div>
 

@@ -9,6 +9,7 @@ import AttendView from './views/AttendView';
 import VenueView from './views/VenueView';
 import CallForTutorials from './components/home/CallForTutorials';
 import CallForStudentConsortium from './components/home/CallForStudentConsortium'; 
+import ProgramView from './views/ProgramView';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/committee" element={<CommitteeView />} />
             <Route path="/attend" element={<AttendView />} />
             <Route path="/venue" element={<VenueView />} />
+            <Route path="/program" element={<ProgramView />} />
           </Routes>
         </main>
         <Footer />

@@ -17,7 +17,7 @@ const Hero = () => {
         
         {/* Párrafo: Aplicamos el max-w-3xl para que las líneas no sean infinitas */}
         <p className="text-xl md:text-2xl text-blue-100 dark:text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed"> 
-          November 9 - 13, 2026 • Ciudad Universitaria, UNAM, Mexico City 
+          November 10 - 13, 2026 • Ciudad Universitaria, UNAM, Mexico City 
         </p> 
         
         {/*<div className="flex flex-col sm:flex-row justify-center gap-4 mb-12"> 

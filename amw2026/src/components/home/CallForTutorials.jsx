@@ -5,7 +5,7 @@ const CallForTutorials = () => {
     { event: "Deadline for proposals", date: "August 17, 2026", icon: "📝" },
     { event: "Notification of acceptance", date: "September 7th, 2026", icon: "✉️" },
     { event: "Tutorial materials due", date: "October 12th, 2026", icon: "📚" },
-    { event: "Tutorial dates", date: "Nov 9th or 10th, 2026", icon: "🗓️" }
+    { event: "Tutorial dates", date: "Nov 10th, 2026", icon: "🗓️" }
   ];
 
   const requirements = [
