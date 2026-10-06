@@ -13,7 +13,8 @@ export const organizationData = [
     role: "Program Chairs (Local chairs)",
     members: [
       { name: "Rocío A. Aldeco Pérez", affiliation: "FI, UNAM", image: "https://via.placeholder.com/150" },
-      { name: "Alejandro Velazquez Mena", affiliation: "FI, UNAM", image: "https://via.placeholder.com/150" }
+      { name: "Alejandro Velazquez Mena", affiliation: "FI, UNAM", image: "https://via.placeholder.com/150" },
+      { name: "Kevin A. Delgado Vargas", affiliation: "FI, UNAM", image: "https://via.placeholder.com/150" }
     ]
   },
   {

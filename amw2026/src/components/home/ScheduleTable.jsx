@@ -1,5 +1,7 @@
 import React from 'react';
 
+const MAPS_URL = "https://maps.app.goo.gl/4xz6xJaWTK2Xwtde6";
+
 const ScheduleTable = () => {
   return (
     <section className="pt-28 pb-16 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-slate-900 transition-colors">
@@ -29,19 +31,15 @@ const ScheduleTable = () => {
                 </th>
                 <th className="p-3 border border-black">
                   <div className="font-extrabold text-base text-white">10-nov</div>
-                 {/*<div className="text-xs text-sky-200 italic font-normal">Place 1</div>*/}
                 </th>
                 <th className="p-3 border border-black">
                   <div className="font-extrabold text-base text-white">11-nov</div>
-                  {/* <div className="text-xs text-sky-200 italic font-normal">Place 1</div> */}
                 </th>
                 <th className="p-3 border border-black">
                   <div className="font-extrabold text-base text-white">12-nov</div>
-                  {/* <div className="text-xs text-sky-200 italic font-normal">Place 1</div> */}
                 </th>
                 <th className="p-3 border border-black">
                   <div className="font-extrabold text-base text-white">13-nov</div>
-                  {/* <div className="text-xs text-sky-200 italic font-normal">Place 1</div> */}
                 </th>
               </tr>
             </thead>
@@ -54,17 +52,57 @@ const ScheduleTable = () => {
                 <td className="px-3 py-2 font-bold text-xs bg-slate-100 text-slate-800 border border-black">
                   9:00 - 9:30
                 </td>
-                <td className="p-2 border border-black bg-[#164775] text-white font-semibold">
-                  Register
+
+                {/* Register Día 10 */}
+                <td className="p-0 border border-black bg-[#164775]">
+                  <a
+                    href={MAPS_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center w-full h-full p-2 text-white font-semibold hover:underline hover:bg-sky-800/50 transition-colors cursor-pointer"
+                    title="Ver ubicación en Google Maps"
+                  >
+                    Register
+                  </a>
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#164775] text-white font-semibold align-middle">
-                  Register
+
+                {/* Register Día 11 */}
+                <td rowSpan={2} className="p-0 border border-black bg-[#164775] align-middle">
+                  <a
+                    href={MAPS_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center w-full h-full p-2 text-white font-semibold hover:underline hover:bg-sky-800/50 transition-colors cursor-pointer"
+                    title="Ver ubicación en Google Maps"
+                  >
+                    Register
+                  </a>
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#164775] text-white font-semibold align-middle">
-                  Register
+
+                {/* Register Día 12 */}
+                <td rowSpan={2} className="p-0 border border-black bg-[#164775] align-middle">
+                  <a
+                    href={MAPS_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center w-full h-full p-2 text-white font-semibold hover:underline hover:bg-sky-800/50 transition-colors cursor-pointer"
+                    title="Ver ubicación en Google Maps"
+                  >
+                    Register
+                  </a>
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#164775] text-white font-semibold align-middle">
-                  Register
+
+                {/* Register Día 13 */}
+                <td rowSpan={2} className="p-0 border border-black bg-[#164775] align-middle">
+                  <a
+                    href={MAPS_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center w-full h-full p-2 text-white font-semibold hover:underline hover:bg-sky-800/50 transition-colors cursor-pointer"
+                    title="Ver ubicación en Google Maps"
+                  >
+                    Register
+                  </a>
                 </td>
               </tr>
 
@@ -100,7 +138,7 @@ const ScheduleTable = () => {
                   10:30 - 11:00
                 </td>
                 <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-white font-semibold align-middle">
-                  Consorcium
+                  Student Consortium
                 </td>
               </tr>
 
@@ -145,7 +183,7 @@ const ScheduleTable = () => {
                   12:00 - 12:30
                 </td>
                 <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-white font-semibold align-middle">
-                  Consorcium
+                  Student Consortium
                 </td>
               </tr>
 
