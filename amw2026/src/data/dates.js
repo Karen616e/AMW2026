@@ -32,7 +32,7 @@ export const importantDates = [
 {
     event: "Camera ready",
     date: "October 09, 2026",
-    status: "upcoming",
+    status: "past",
     note: ""
 },
 {

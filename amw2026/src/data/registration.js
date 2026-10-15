@@ -1,7 +1,7 @@
 export const registrationFees = [
   { 
     type: "Early Bird (Before August)", 
-    student: "$150 USD", 
+    student: "$2700 MXN", 
     regular: "$3500 MXN" 
   },
   { 

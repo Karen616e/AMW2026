@@ -51,10 +51,10 @@ const Registration = () => {
 
   return (
     <section id="registration" className="py-24 bg-white dark:bg-slate-900 transition-colors duration-300">
-      <div className="max-w-6xl mx-auto px-4 relative">
+      <div className="max-w-6xl mx-auto px-4 relative flex flex-col">
         
         {/* --- ENCABEZADO --- */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-4">
           <h2 className="text-4xl md:text-5xl font-black text-slate-800 dark:text-white mb-6 tracking-tight">
             Registration
           </h2>
@@ -65,21 +65,9 @@ const Registration = () => {
         </div>
 
         {/* ==========================================
-            SECCIÓN 1: AUTORES (Azul -> Blanco)
+            SECCIÓN 2: AUTORES (Azul -> Blanco)
             ========================================== */}
-        <div className="mb-20">
-          <div className="flex justify-center mb-8">
-            <button
-              type="button"
-              onClick={() => setIsPaymentPolicyOpen(true)}
-              className={primaryActionButtonClassName}
-            >
-              Registration Payment Policy
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </button>
-          </div>
+        <div className="order-2 mb-20">
           <h3 className="text-3xl font-black text-slate-800 dark:text-white mb-8 text-center uppercase tracking-widest">
             For Authors
           </h3>
@@ -199,26 +187,38 @@ const Registration = () => {
         </div>
 
         {/* ==========================================
-            SECCIÓN 2: ESTUDIANTES (Blanco -> Azul)
-            ========================================== 
-        <div className="mb-16">
+            SECCIÓN 1: PROFESSIONAL PASS
+            ========================================== */}
+        <div className="order-1 mb-16">
+          <div className="flex justify-center mb-8">
+            <button
+              type="button"
+              onClick={() => setIsPaymentPolicyOpen(true)}
+              className={primaryActionButtonClassName}
+            >
+              Registration Payment Policy
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </button>
+          </div>
           <h3 className="text-3xl font-black text-slate-800 dark:text-white mb-8 text-center uppercase tracking-widest">
-            For Students
+            Professional Pass
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             
-             --- STUDENT EARLY (White) --- 
-            <div className="flex flex-col bg-white dark:bg-slate-800 rounded-3xl p-8 md:p-10 border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 relative group">
+             {/*--- STUDENT EARLY (White) ---*/ }
+            <div className="flex flex-col bg-white dark:bg-slate-800 rounded-3xl p-8 md:p-10 border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 relative group md:col-span-2 md:w-full md:max-w-2xl md:justify-self-center">
               <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
                 <span className="text-6xl">⏰</span>
               </div>
               
-              <h4 className="text-2xl font-bold text-slate-800 dark:text-white mb-3">Early</h4>
+              {/*<h4 className="text-2xl font-bold text-slate-800 dark:text-white mb-3">Early</h4>
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 text-sm font-bold w-fit mb-6 border border-green-200 dark:border-green-800/50">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                 Before August 7th
               </div>
-              <p className="text-slate-500 dark:text-slate-400 font-medium mb-8">For currently enrolled undergraduate and graduate students.</p>
+              <p className="text-slate-500 dark:text-slate-400 font-medium mb-8">For currently enrolled undergraduate and graduate students.</p>*/}
               
               <div className="mb-8">
                 <div className="flex items-end gap-2 mb-2">
@@ -235,15 +235,30 @@ const Registration = () => {
                 ))}
               </ul>
 
-              <button 
-                onClick={() => handleOpenModal('Student - Early')}
-                className="w-full py-4 rounded-xl font-bold text-lg bg-blue-50 dark:bg-slate-700 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white transition-colors duration-300"
-              >
-                Register as Student
-              </button>
+               <div className="relative group">
+                <button 
+                  type="button"
+                  disabled={!hasAgreedToPaymentPolicy}
+                  aria-describedby={!hasAgreedToPaymentPolicy ? 'late-payment-policy-tooltip' : undefined}
+                  onClick={() => handleOpenModal('Professional Pass')}
+                  className={`w-full py-4 rounded-xl font-bold text-lg bg-blue-50 dark:bg-slate-700 text-blue-600 dark:text-blue-400 transition-colors duration-300 ${hasAgreedToPaymentPolicy ? 'hover:bg-blue-600 hover:text-white' : 'cursor-not-allowed opacity-50'}`}
+                >
+                  Register as Professional
+                </button>
+                {!hasAgreedToPaymentPolicy && (
+                  <span
+                    id="late-payment-policy-tooltip"
+                    role="tooltip"
+                    className="pointer-events-none mt-2 block text-left text-[10px] font-medium leading-snug text-black opacity-100 transition-opacity duration-200 sm:absolute sm:bottom-full sm:left-1/2 sm:mb-3 sm:w-72 sm:-translate-x-1/2 sm:rounded-xl sm:bg-slate-100 sm:px-4 sm:py-3 sm:text-center sm:text-xs sm:leading-relaxed sm:text-slate-900 sm:shadow-xl sm:opacity-0 sm:group-hover:opacity-100 sm:group-focus-within:opacity-100 dark:text-slate-300 sm:dark:bg-slate-200 sm:dark:text-slate-900"
+                  >
+                    Please read and accept the Registration Payment Policy above to enable author registration.
+                  </span>
+                )}
+              </div>
+              
             </div>
 
-            {/* --- STUDENT LATE (Blue) --- 
+            {/* --- STUDENT LATE (Blue) ---
             <div className="flex flex-col bg-blue-600 dark:bg-blue-700 rounded-3xl p-8 md:p-10 shadow-2xl hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden text-white">
               <div className="absolute -top-24 -right-24 w-64 h-64 bg-white opacity-5 rounded-full blur-2xl"></div>
               
@@ -284,10 +299,10 @@ const Registration = () => {
                   Register as Student
                 </button>
               </div>
-            </div>
+            </div>*/}
 
           </div>
-        </div>*/}
+        </div>
 
       </div>
 

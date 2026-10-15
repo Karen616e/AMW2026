@@ -62,7 +62,7 @@ const ScheduleTable = () => {
                     className="flex items-center justify-center w-full h-full p-2 text-white font-semibold hover:underline hover:bg-sky-800/50 transition-colors cursor-pointer"
                     title="Ver ubicación en Google Maps"
                   >
-                    Register
+                    Register|
                   </a>
                 </td>
 
