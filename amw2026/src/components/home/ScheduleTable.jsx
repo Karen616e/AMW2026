@@ -37,19 +37,19 @@ const ScheduleTable = () => {
             {/* Header: Días */}
             <thead>
               <tr className="bg-[#001449] text-white">
-                <th className="p-3 w-32 font-bold uppercase text-xs tracking-wider border border-black text-slate-200">
+                <th className="p-3 w-32 font-bold uppercase text-xs tracking-wider border border-black text-slate-200 text-center align-middle">
                   Time
                 </th>
-                <th className="p-3 border border-black w-1/4">
+                <th className="p-3 border border-black w-1/4 text-center align-middle">
                   <div className="font-extrabold text-base text-white">10-nov</div>
                 </th>
-                <th className="p-3 border border-black w-1/4">
+                <th className="p-3 border border-black w-1/4 text-center align-middle">
                   <div className="font-extrabold text-base text-white">11-nov</div>
                 </th>
-                <th className="p-3 border border-black w-1/4">
+                <th className="p-3 border border-black w-1/4 text-center align-middle">
                   <div className="font-extrabold text-base text-white">12-nov</div>
                 </th>
-                <th className="p-3 border border-black w-1/4">
+                <th className="p-3 border border-black w-1/4 text-center align-middle">
                   <div className="font-extrabold text-base text-white">13-nov</div>
                 </th>
               </tr>
@@ -58,10 +58,10 @@ const ScheduleTable = () => {
             <tbody>
               {/* 9:00 - 9:30 */}
               <tr className="h-12">
-                <td className="px-3 py-2 font-bold text-xs bg-slate-100 text-slate-800 border border-black">
+                <td className="px-3 py-2 font-bold text-xs bg-slate-100 text-slate-800 border border-black text-center align-middle">
                   9:00 - 9:30
                 </td>
-                <td className="p-0 border border-black bg-[#164775]">
+                <td className="p-0 border border-black bg-[#164775] text-center align-middle">
                   <a
                     href={MAPS_URL}
                     target="_blank"
@@ -72,7 +72,7 @@ const ScheduleTable = () => {
                     Registration
                   </a>
                 </td>
-                <td rowSpan={2} className="p-0 border border-black bg-[#164775] align-middle">
+                <td rowSpan={2} className="p-0 border border-black bg-[#164775] text-center align-middle">
                   <a
                     href={MAPS_URL}
                     target="_blank"
@@ -83,7 +83,7 @@ const ScheduleTable = () => {
                     Registration
                   </a>
                 </td>
-                <td rowSpan={2} className="p-0 border border-black bg-[#164775] align-middle">
+                <td rowSpan={2} className="p-0 border border-black bg-[#164775] text-center align-middle">
                   <a
                     href={MAPS_URL}
                     target="_blank"
@@ -94,7 +94,7 @@ const ScheduleTable = () => {
                     Registration
                   </a>
                 </td>
-                <td rowSpan={2} className="p-0 border border-black bg-[#164775] align-middle">
+                <td rowSpan={2} className="p-0 border border-black bg-[#164775] text-center align-middle">
                   <a
                     href={MAPS_URL}
                     target="_blank"
@@ -109,10 +109,10 @@ const ScheduleTable = () => {
 
               {/* 9:30 - 10:00 */}
               <tr className="h-12">
-                <td className="px-3 py-2 font-bold text-xs bg-slate-100 text-slate-800 border border-black">
+                <td className="px-3 py-2 font-bold text-xs bg-slate-100 text-slate-800 border border-black text-center align-middle">
                   9:30 - 10:00
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#012677]/80 text-white font-medium align-middle">
+                <td rowSpan={2} className="p-2 border border-black bg-[#012677]/80 text-white font-medium text-center align-middle">
                   <span className="font-bold">Opening MCyRA 2026 & RAMC</span>
                   <br />
                   Introduction
@@ -121,14 +121,14 @@ const ScheduleTable = () => {
 
               {/* 10:00 - 10:30 & 10:30 - 11:00 (Keynotes) */}
               <tr className="h-12">
-                <td className="px-3 py-2 font-bold text-xs bg-slate-100 text-slate-800 border border-black">
+                <td className="px-3 py-2 font-bold text-xs bg-slate-100 text-slate-800 border border-black text-center align-middle">
                   10:00 - 10:30
                 </td>
                 
                 {/* Bart Mennink */}
                 <td 
                   rowSpan={2} 
-                  className="p-2 border border-black bg-[#001449] text-white font-normal text-xs align-middle leading-tight relative"
+                  className="p-2 border border-black bg-[#001449] text-white font-normal text-xs text-center align-middle leading-tight"
                 >
                   <div 
                     onClick={() => setIsBartModalOpen(true)}
@@ -151,7 +151,7 @@ const ScheduleTable = () => {
                 {/* Gustavo Betarte */}
                 <td 
                   rowSpan={2} 
-                  className="p-2 border border-black bg-[#001449] text-white font-normal text-xs align-middle leading-tight relative"
+                  className="p-2 border border-black bg-[#001449] text-white font-normal text-xs text-center align-middle leading-tight"
                 >
                   <div 
                     onClick={() => setIsGustavoModalOpen(true)}
@@ -168,7 +168,7 @@ const ScheduleTable = () => {
                 {/* Santiago Torres Arias */}
                 <td 
                   rowSpan={2} 
-                  className="p-2 border border-black bg-[#001449] text-white font-normal text-xs align-middle leading-tight relative"
+                  className="p-2 border border-black bg-[#001449] text-white font-normal text-xs text-center align-middle leading-tight"
                 >
                   <div 
                     onClick={() => setIsSantiagoModalOpen(true)}
@@ -185,26 +185,26 @@ const ScheduleTable = () => {
 
               {/* 10:30 - 11:00 */}
               <tr className="h-12">
-                <td className="px-3 py-2 font-bold text-xs bg-slate-100 text-slate-800 border border-black">
+                <td className="px-3 py-2 font-bold text-xs bg-slate-100 text-slate-800 border border-black text-center align-middle">
                   10:30 - 11:00
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#608bae] text-slate-950 font-bold align-middle">
+                <td rowSpan={2} className="p-2 border border-black bg-[#608bae] text-slate-950 font-bold text-center align-middle">
                   Student Consortium
                 </td>
               </tr>
 
               {/* 11:00 - 11:30 */}
               <tr className="h-12">
-                <td className="px-3 py-2 font-bold text-xs bg-slate-100 text-slate-800 border border-black">
+                <td className="px-3 py-2 font-bold text-xs bg-slate-100 text-slate-800 border border-black text-center align-middle">
                   11:00 - 11:30
                 </td>
-                <td className="p-2 border border-black bg-[#418EC3] text-slate-900 font-semibold">
+                <td className="p-2 border border-black bg-[#418EC3] text-slate-900 font-semibold text-center align-middle">
                   Coffee break
                 </td>
-                <td className="p-2 border border-black bg-[#418EC3] text-slate-900 font-semibold">
+                <td className="p-2 border border-black bg-[#418EC3] text-slate-900 font-semibold text-center align-middle">
                   Coffee break
                 </td>
-                <td className="p-2 border border-black bg-[#418EC3] text-slate-900 font-semibold">
+                <td className="p-2 border border-black bg-[#418EC3] text-slate-900 font-semibold text-center align-middle">
                   Coffee break
                 </td>
               </tr>
@@ -213,21 +213,21 @@ const ScheduleTable = () => {
 
               {/* 11:30 - 11:40 */}
               <tr>
-                <td className="px-3 py-1 font-bold text-xs bg-slate-100 text-slate-800 border border-black">
+                <td className="px-3 py-1 font-bold text-xs bg-slate-100 text-slate-800 border border-black text-center align-middle">
                   11:30 - 11:40
                 </td>
-                <td rowSpan={3} className="p-2 border border-black bg-[#418EC3] text-slate-900 font-semibold align-middle">
+                <td rowSpan={3} className="p-2 border border-black bg-[#418EC3] text-slate-900 font-semibold text-center align-middle">
                   Coffee break
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
                   <div className="font-bold">Auditability and Verifiability in Dynamic Security Service Workflows: A State-of-the-Art Review</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Cecilia Angulo Domínguez, Arturo Díaz Pérez, José González Compeán</div>
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
                   <div className="font-bold">On The Complexity Comparison of Mined ABAC Policy Rule Sets</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Hector Diaz-Rodriguez, Arturo Diaz-Perez</div>
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
                   <div className="font-bold">Detecting Jailbreak attacks through Unrestricted Model responses for Large Language Models</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Fabio Sánchez-Arévalo, Alfonso Martínez-Cruz, Raziel Campos-Sánchez</div>
                 </td>
@@ -235,25 +235,25 @@ const ScheduleTable = () => {
 
               {/* 11:40 - 11:50 */}
               <tr>
-                <td className="px-3 py-1 font-bold text-xs bg-slate-100 text-slate-800 border border-black">
+                <td className="px-3 py-1 font-bold text-xs bg-slate-100 text-slate-800 border border-black text-center align-middle">
                   11:40 - 11:50
                 </td>
               </tr>
 
               {/* 11:50 - 12:00 */}
               <tr>
-                <td className="px-3 py-1 font-bold text-xs bg-slate-100 text-slate-800 border border-black">
+                <td className="px-3 py-1 font-bold text-xs bg-slate-100 text-slate-800 border border-black text-center align-middle">
                   11:50 - 12:00
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
                   <div className="font-bold">A Noise Reduction Method for Privacy-Preserving Logistic Regression Training</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Alejandro Ojeda-Xiqui, Miguel Morales-Sandoval, Shanel Reyes-Palacios</div>
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
                   <div className="font-bold">Design and Implementation of Secure Storage Region Using SRAM PUFs for IoT Devices</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Alejandro Salinas Victorino, Claudia Feregrino Uribe, Raziel Campos Sánchez, Alejandro Peñuelas Angulo</div>
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
                   <div className="font-bold">Online Machine Learning Approach for Production-Ready DDoS Detection</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Jose de Jesus Zapata Lara, Heidy Marisol Marin Castro</div>
                 </td>
@@ -261,28 +261,28 @@ const ScheduleTable = () => {
 
               {/* 12:00 - 12:10 */}
               <tr>
-                <td className="px-3 py-1 font-bold text-xs bg-slate-100 text-slate-800 border border-black">
+                <td className="px-3 py-1 font-bold text-xs bg-slate-100 text-slate-800 border border-black text-center align-middle">
                   12:00 - 12:10
                 </td>
-                <td rowSpan={6} className="p-2 border border-black bg-[#608bae] text-slate-950 font-bold align-middle">
+                <td rowSpan={6} className="p-2 border border-black bg-[#608bae] text-slate-950 font-bold text-center align-middle">
                   Student Consortium
                 </td>
               </tr>
 
               {/* 12:10 - 12:20 */}
               <tr>
-                <td className="px-3 py-1 font-bold text-xs bg-slate-100 text-slate-800 border border-black">
+                <td className="px-3 py-1 font-bold text-xs bg-slate-100 text-slate-800 border border-black text-center align-middle">
                   12:10 - 12:20
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
                   <div className="font-bold">Assessing the Impact of Standardized Post-Quantum Digital Signatures on Self-Sovereign Identity Artifacts</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Israel Jaudy Perez-Bermudez, Miguel Morales-Sandoval, Lil Maria Xibai Rodriguez Henriquez, Iván Olivera Romero</div>
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
                   <div className="font-bold">For a Safer University Internet: Detecting VPN Tunnels with Machine Learning</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Francisco Vega Salazar, Alejandra Silva Trujillo, Juan Cuevas Tello</div>
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
                   <div className="font-bold">SpearPhishMX: Dataset sanitizado de correos en español y benchmark para la detección de spear-phishing</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Juan Diaz Zeferino, Alfonso Martínez Cruz, Lázaro Bustio Martínez</div>
                 </td>
@@ -290,25 +290,25 @@ const ScheduleTable = () => {
 
               {/* 12:20 - 12:30 */}
               <tr>
-                <td className="px-3 py-1 font-bold text-xs bg-slate-100 text-slate-800 border border-black">
+                <td className="px-3 py-1 font-bold text-xs bg-slate-100 text-slate-800 border border-black text-center align-middle">
                   12:20 - 12:30
                 </td>
               </tr>
 
               {/* 12:30 - 12:40 */}
               <tr>
-                <td className="px-3 py-1 font-bold text-xs bg-slate-100 text-slate-800 border border-black">
+                <td className="px-3 py-1 font-bold text-xs bg-slate-100 text-slate-800 border border-black text-center align-middle">
                   12:30 - 12:40
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
                   <div className="font-bold">FPGA Design for Shamir Secret-Sharing Keys</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Martha Morales Meza, Arturo Díaz Pérez, Pedro Mejía Álvarez</div>
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
                   <div className="font-bold">Network Traffic Classifier</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Emiliano Angeles Prado, Juan Carlos Cuevas Tello, Alejandra Guadalupe Silva Trujillo</div>
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
                   <div className="font-bold">Dataset Protection through Deception Techniques: A Systematic Review</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Eleazar Aguirre Anaya, Daniel Iván Castro Lara, Eleazar Aguirre Mandujano</div>
                 </td>
@@ -316,17 +316,17 @@ const ScheduleTable = () => {
 
               {/* 12:40 - 12:50 */}
               <tr>
-                <td className="px-3 py-1 font-bold text-xs bg-slate-100 text-slate-800 border border-black">
+                <td className="px-3 py-1 font-bold text-xs bg-slate-100 text-slate-800 border border-black text-center align-middle">
                   12:40 - 12:50
                 </td>
               </tr>
 
               {/* 12:50 - 13:00 */}
               <tr>
-                <td className="px-3 py-1 font-bold text-xs bg-slate-100 text-slate-800 border border-black">
+                <td className="px-3 py-1 font-bold text-xs bg-slate-100 text-slate-800 border border-black text-center align-middle">
                   12:50 - 13:00
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
                   <div className="font-bold">Search for points with short periods in the AES round function with Constant Keys</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Luis A. Pérez Sarmiento, Abraham Gutierrez, Cuauhtemoc Mancillas -López</div>
                 </td>
@@ -336,60 +336,60 @@ const ScheduleTable = () => {
 
               {/* 13:00 - 13:10 */}
               <tr>
-                <td className="px-3 py-1 font-bold text-xs bg-slate-100 text-slate-800 border border-black">
+                <td className="px-3 py-1 font-bold text-xs bg-slate-100 text-slate-800 border border-black text-center align-middle">
                   13:00 - 13:10
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#005BC5]/80 text-white font-bold align-middle">
+                <td rowSpan={2} className="p-2 border border-black bg-[#005BC5]/80 text-white font-bold text-center align-middle">
                   Lunch
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#005BC5]/80 text-white font-bold align-middle">
+                <td rowSpan={2} className="p-2 border border-black bg-[#005BC5]/80 text-white font-bold text-center align-middle">
                   Lunch
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#012677]/80 text-white font-bold align-middle">
+                <td rowSpan={2} className="p-2 border border-black bg-[#012677]/80 text-white font-bold text-center align-middle">
                   Closing and lunch
                 </td>
               </tr>
 
               {/* 13:10 - 14:00 */}
               <tr className="h-14">
-                <td className="px-3 py-2 font-bold text-xs bg-slate-100 text-slate-800 border border-black">
+                <td className="px-3 py-2 font-bold text-xs bg-slate-100 text-slate-800 border border-black text-center align-middle">
                   13:10 - 14:00
                 </td>
-                <td className="p-2 border border-black bg-[#005BC5]/80 text-white font-bold align-middle">
+                <td className="p-2 border border-black bg-[#005BC5]/80 text-white font-bold text-center align-middle">
                   Lunch
                 </td>
               </tr>
 
               {/* 14:00 - 18:00 */}
               <tr className="h-20">
-                <td className="px-3 py-2 font-bold text-xs bg-slate-100 text-slate-800 border border-black">
+                <td className="px-3 py-2 font-bold text-xs bg-slate-100 text-slate-800 border border-black text-center align-middle">
                   14:00 - 18:00
                 </td>
 
-                {/* Tutorial 1 con Pop-up interactivo */}
+                {/* Tutorial 1 */}
                 <td 
                   onClick={() => setIsTutorial1ModalOpen(true)}
-                  className="p-2 border border-black bg-white text-[#001449] font-bold text-xs leading-snug align-middle cursor-pointer hover:bg-slate-100 transition-colors group"
+                  className="p-2 border border-black bg-white text-[#001449] font-bold text-xs leading-snug text-center align-middle cursor-pointer hover:bg-slate-100 transition-colors group"
                   title="Click to view details for Tutorial 1"
                 >
                   <span className="group-hover:underline">Tutorial 1:</span><br />
                   <span className="font-normal group-hover:underline">Hands-on Post-quantum cryptography</span>
                 </td>
                 
-                {/* Tutorial 2 con Pop-up interactivo */}
+                {/* Tutorial 2 */}
                 <td 
                   onClick={() => setIsTutorial2ModalOpen(true)}
-                  className="p-2 border border-black bg-white text-[#001449] font-bold text-xs leading-snug align-middle cursor-pointer hover:bg-slate-100 transition-colors group"
+                  className="p-2 border border-black bg-white text-[#001449] font-bold text-xs leading-snug text-center align-middle cursor-pointer hover:bg-slate-100 transition-colors group"
                   title="Click to view details for Tutorial 2"
                 >
                   <span className="group-hover:underline">Tutorial 2:</span><br />
                   <span className="font-normal group-hover:underline">Introduction to pre-quantum cryptography</span>
                 </td>
 
-                {/* Tutorial 3 con Pop-up interactivo */}
+                {/* Tutorial 3 */}
                 <td 
                   onClick={() => setIsTutorial3ModalOpen(true)}
-                  className="p-2 border border-black bg-white text-[#001449] font-bold text-xs leading-snug align-middle cursor-pointer hover:bg-slate-100 transition-colors group"
+                  className="p-2 border border-black bg-white text-[#001449] font-bold text-xs leading-snug text-center align-middle cursor-pointer hover:bg-slate-100 transition-colors group"
                   title="Click to view details for Tutorial 3"
                 >
                   <span className="group-hover:underline">Tutorial 3:</span><br />
@@ -423,7 +423,7 @@ const ScheduleTable = () => {
               &times;
             </button>
 
-            <div className="mb-4">
+            <div className="mb-4 text-left">
               <h2 className="text-xl sm:text-2xl font-bold text-[#001449] dark:text-white">
                 Bart Mennink
               </h2>
@@ -432,7 +432,7 @@ const ScheduleTable = () => {
               </p>
             </div>
 
-            <h3 className="text-xs font-bold uppercase tracking-wider text-[#005BC5] dark:text-sky-400 mb-2">
+            <h3 className="text-xs font-bold uppercase tracking-wider text-[#005BC5] dark:text-sky-400 mb-2 text-left">
               BIO.
             </h3>
 
@@ -469,7 +469,7 @@ const ScheduleTable = () => {
               &times;
             </button>
 
-            <div className="mb-4">
+            <div className="mb-4 text-left">
               <h2 className="text-xl sm:text-2xl font-bold text-[#001449] dark:text-white">
                 Gustavo Betarte
               </h2>
@@ -478,7 +478,7 @@ const ScheduleTable = () => {
               </p>
             </div>
 
-            <h3 className="text-xs font-bold uppercase tracking-wider text-[#005BC5] dark:text-sky-400 mb-2">
+            <h3 className="text-xs font-bold uppercase tracking-wider text-[#005BC5] dark:text-sky-400 mb-2 text-left">
               BIO.
             </h3>
 
@@ -515,7 +515,7 @@ const ScheduleTable = () => {
               &times;
             </button>
 
-            <div className="mb-4">
+            <div className="mb-4 text-left">
               <h2 className="text-xl sm:text-2xl font-bold text-[#001449] dark:text-white">
                 Santiago Torres Arias
               </h2>
@@ -524,7 +524,7 @@ const ScheduleTable = () => {
               </p>
             </div>
 
-            <h3 className="text-xs font-bold uppercase tracking-wider text-[#005BC5] dark:text-sky-400 mb-2">
+            <h3 className="text-xs font-bold uppercase tracking-wider text-[#005BC5] dark:text-sky-400 mb-2 text-left">
               BIO.
             </h3>
 
@@ -561,7 +561,7 @@ const ScheduleTable = () => {
               &times;
             </button>
 
-            <div className="mb-4">
+            <div className="mb-4 text-left">
               <span className="text-xs font-bold uppercase tracking-wider text-[#005BC5] dark:text-sky-400 block mb-1">
                 Keynote
               </span>
@@ -617,7 +617,7 @@ const ScheduleTable = () => {
               &times;
             </button>
 
-            <div className="mb-6 border-b border-slate-200 dark:border-slate-700 pb-4">
+            <div className="mb-6 border-b border-slate-200 dark:border-slate-700 pb-4 text-left">
               <span className="text-xs font-bold uppercase tracking-wider text-[#005BC5] dark:text-sky-400 block mb-1">
                 Tutorial 1
               </span>
@@ -629,7 +629,7 @@ const ScheduleTable = () => {
               </p>
             </div>
 
-            <div className="space-y-6 text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed">
+            <div className="space-y-6 text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed text-left">
               
               <div>
                 <h3 className="text-sm font-bold text-[#001449] dark:text-white uppercase tracking-wider mb-2">
@@ -732,7 +732,6 @@ const ScheduleTable = () => {
             className="bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 rounded-xl shadow-2xl max-w-3xl w-full p-6 sm:p-8 relative border border-slate-200 dark:border-slate-700 max-h-[85vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Botón X superior para cerrar */}
             <button
               onClick={() => setIsTutorial2ModalOpen(false)}
               className="absolute top-4 right-4 text-slate-400 hover:text-slate-700 dark:hover:text-white text-xl font-bold w-8 h-8 flex items-center justify-center rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
@@ -740,8 +739,7 @@ const ScheduleTable = () => {
               &times;
             </button>
 
-            {/* Encabezado del Pop-up traducido */}
-            <div className="mb-6 border-b border-slate-200 dark:border-slate-700 pb-4">
+            <div className="mb-6 border-b border-slate-200 dark:border-slate-700 pb-4 text-left">
               <span className="text-xs font-bold uppercase tracking-wider text-[#005BC5] dark:text-sky-400 block mb-1">
                 Tutorial 2
               </span>
@@ -753,10 +751,8 @@ const ScheduleTable = () => {
               </p>
             </div>
 
-            {/* Cuerpo del contenido en Inglés */}
-            <div className="space-y-6 text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed">
+            <div className="space-y-6 text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed text-left">
               
-              {/* Abstract */}
               <div>
                 <h3 className="text-sm font-bold text-[#001449] dark:text-white uppercase tracking-wider mb-2">
                   Abstract
@@ -772,7 +768,6 @@ const ScheduleTable = () => {
                 </p>
               </div>
 
-              {/* Topics / Temario */}
               <div>
                 <h3 className="text-sm font-bold text-[#001449] dark:text-white uppercase tracking-wider mb-2">
                   Topics
@@ -790,7 +785,6 @@ const ScheduleTable = () => {
                 </ul>
               </div>
 
-              {/* Audience */}
               <div>
                 <h3 className="text-sm font-bold text-[#001449] dark:text-white uppercase tracking-wider mb-2">
                   Audience
@@ -800,7 +794,6 @@ const ScheduleTable = () => {
                 </p>
               </div>
 
-              {/* Speaker CV */}
               <div>
                 <h3 className="text-sm font-bold text-[#001449] dark:text-white uppercase tracking-wider mb-2">
                   Instructor Bio
@@ -816,7 +809,6 @@ const ScheduleTable = () => {
                 </p>
               </div>
 
-              {/* Contact Information */}
               <div>
                 <h3 className="text-sm font-bold text-[#001449] dark:text-white uppercase tracking-wider mb-2">
                   Contact Information
@@ -840,7 +832,6 @@ const ScheduleTable = () => {
                 </div>
               </div>
 
-              {/* Technical Requirements */}
               <div>
                 <h3 className="text-sm font-bold text-[#001449] dark:text-white uppercase tracking-wider mb-2">
                   Technical Requirements
@@ -859,10 +850,10 @@ const ScheduleTable = () => {
                       https://kleopatra.app/tools/kleopatra-download
                     </a>
                   </li>
-                  <li>
-                    Internet connection to download software and access websites.
-                  </li>
                 </ul>
+                <p className="mt-2 text-slate-600 dark:text-slate-300">
+                  Internet connection to download software and access websites.
+                </p>
               </div>
 
             </div>
@@ -896,7 +887,7 @@ const ScheduleTable = () => {
               &times;
             </button>
 
-            <div className="mb-6 border-b border-slate-200 dark:border-slate-700 pb-4">
+            <div className="mb-6 border-b border-slate-200 dark:border-slate-700 pb-4 text-left">
               <span className="text-xs font-bold uppercase tracking-wider text-[#005BC5] dark:text-sky-400 block mb-1">
                 Tutorial 3
               </span>
@@ -908,7 +899,7 @@ const ScheduleTable = () => {
               </p>
             </div>
 
-            <div className="space-y-6 text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed">
+            <div className="space-y-6 text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed text-left">
               
               <div>
                 <h3 className="text-sm font-bold text-[#001449] dark:text-white uppercase tracking-wider mb-2">
