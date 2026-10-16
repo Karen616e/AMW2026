@@ -219,15 +219,15 @@ const ScheduleTable = () => {
                 <td rowSpan={3} className="p-2 border border-black bg-[#418EC3] text-slate-900 font-semibold align-middle">
                   Coffee break
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
                   <div className="font-bold">Auditability and Verifiability in Dynamic Security Service Workflows: A State-of-the-Art Review</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Cecilia Angulo Domínguez, Arturo Díaz Pérez, José González Compeán</div>
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
                   <div className="font-bold">On The Complexity Comparison of Mined ABAC Policy Rule Sets</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Hector Diaz-Rodriguez, Arturo Diaz-Perez</div>
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
                   <div className="font-bold">Detecting Jailbreak attacks through Unrestricted Model responses for Large Language Models</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Fabio Sánchez-Arévalo, Alfonso Martínez-Cruz, Raziel Campos-Sánchez</div>
                 </td>
@@ -245,15 +245,15 @@ const ScheduleTable = () => {
                 <td className="px-3 py-1 font-bold text-xs bg-slate-100 text-slate-800 border border-black">
                   11:50 - 12:00
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
                   <div className="font-bold">A Noise Reduction Method for Privacy-Preserving Logistic Regression Training</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Alejandro Ojeda-Xiqui, Miguel Morales-Sandoval, Shanel Reyes-Palacios</div>
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
                   <div className="font-bold">Design and Implementation of Secure Storage Region Using SRAM PUFs for IoT Devices</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Alejandro Salinas Victorino, Claudia Feregrino Uribe, Raziel Campos Sánchez, Alejandro Peñuelas Angulo</div>
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
                   <div className="font-bold">Online Machine Learning Approach for Production-Ready DDoS Detection</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Jose de Jesus Zapata Lara, Heidy Marisol Marin Castro</div>
                 </td>
@@ -274,15 +274,15 @@ const ScheduleTable = () => {
                 <td className="px-3 py-1 font-bold text-xs bg-slate-100 text-slate-800 border border-black">
                   12:10 - 12:20
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
                   <div className="font-bold">Assessing the Impact of Standardized Post-Quantum Digital Signatures on Self-Sovereign Identity Artifacts</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Israel Jaudy Perez-Bermudez, Miguel Morales-Sandoval, Lil Maria Xibai Rodriguez Henriquez, Iván Olivera Romero</div>
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
                   <div className="font-bold">For a Safer University Internet: Detecting VPN Tunnels with Machine Learning</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Francisco Vega Salazar, Alejandra Silva Trujillo, Juan Cuevas Tello</div>
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
                   <div className="font-bold">SpearPhishMX: Dataset sanitizado de correos en español y benchmark para la detección de spear-phishing</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Juan Diaz Zeferino, Alfonso Martínez Cruz, Lázaro Bustio Martínez</div>
                 </td>
@@ -300,15 +300,15 @@ const ScheduleTable = () => {
                 <td className="px-3 py-1 font-bold text-xs bg-slate-100 text-slate-800 border border-black">
                   12:30 - 12:40
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
                   <div className="font-bold">FPGA Design for Shamir Secret-Sharing Keys</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Martha Morales Meza, Arturo Díaz Pérez, Pedro Mejía Álvarez</div>
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
                   <div className="font-bold">Network Traffic Classifier</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Emiliano Angeles Prado, Juan Carlos Cuevas Tello, Alejandra Guadalupe Silva Trujillo</div>
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
                   <div className="font-bold">Dataset Protection through Deception Techniques: A Systematic Review</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Eleazar Aguirre Anaya, Daniel Iván Castro Lara, Eleazar Aguirre Mandujano</div>
                 </td>
@@ -326,7 +326,7 @@ const ScheduleTable = () => {
                 <td className="px-3 py-1 font-bold text-xs bg-slate-100 text-slate-800 border border-black">
                   12:50 - 13:00
                 </td>
-                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-center align-middle">
+                <td rowSpan={2} className="p-2 border border-black bg-[#00B4FC] text-slate-950 text-xs text-left align-top">
                   <div className="font-bold">Search for points with short periods in the AES round function with Constant Keys</div>
                   <div className="italic text-[11px] text-slate-800 mt-0.5">Luis A. Pérez Sarmiento, Abraham Gutierrez, Cuauhtemoc Mancillas -López</div>
                 </td>
@@ -610,7 +610,6 @@ const ScheduleTable = () => {
             className="bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 rounded-xl shadow-2xl max-w-3xl w-full p-6 sm:p-8 relative border border-slate-200 dark:border-slate-700 max-h-[85vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Botón X superior para cerrar */}
             <button
               onClick={() => setIsTutorial1ModalOpen(false)}
               className="absolute top-4 right-4 text-slate-400 hover:text-slate-700 dark:hover:text-white text-xl font-bold w-8 h-8 flex items-center justify-center rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
@@ -618,7 +617,6 @@ const ScheduleTable = () => {
               &times;
             </button>
 
-            {/* Encabezado del Pop-up */}
             <div className="mb-6 border-b border-slate-200 dark:border-slate-700 pb-4">
               <span className="text-xs font-bold uppercase tracking-wider text-[#005BC5] dark:text-sky-400 block mb-1">
                 Tutorial 1
@@ -631,10 +629,8 @@ const ScheduleTable = () => {
               </p>
             </div>
 
-            {/* Cuerpo del contenido */}
             <div className="space-y-6 text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed">
               
-              {/* Abstract */}
               <div>
                 <h3 className="text-sm font-bold text-[#001449] dark:text-white uppercase tracking-wider mb-2">
                   Abstract
@@ -647,7 +643,6 @@ const ScheduleTable = () => {
                 </p>
               </div>
 
-              {/* Topics */}
               <div>
                 <h3 className="text-sm font-bold text-[#001449] dark:text-white uppercase tracking-wider mb-2">
                   Topics
@@ -665,7 +660,6 @@ const ScheduleTable = () => {
                 </ul>
               </div>
 
-              {/* Audience */}
               <div>
                 <h3 className="text-sm font-bold text-[#001449] dark:text-white uppercase tracking-wider mb-2">
                   Audience
@@ -675,7 +669,6 @@ const ScheduleTable = () => {
                 </p>
               </div>
 
-              {/* Speaker CV */}
               <div>
                 <h3 className="text-sm font-bold text-[#001449] dark:text-white uppercase tracking-wider mb-2">
                   Brief CV of the Speaker
@@ -685,7 +678,6 @@ const ScheduleTable = () => {
                 </p>
               </div>
 
-              {/* Contact Information */}
               <div>
                 <h3 className="text-sm font-bold text-[#001449] dark:text-white uppercase tracking-wider mb-2">
                   Contact information
@@ -706,7 +698,6 @@ const ScheduleTable = () => {
                 </div>
               </div>
 
-              {/* Technical Requirements */}
               <div>
                 <h3 className="text-sm font-bold text-[#001449] dark:text-white uppercase tracking-wider mb-2">
                   Technical requirements
@@ -719,7 +710,6 @@ const ScheduleTable = () => {
 
             </div>
 
-            {/* Botón inferior de cerrar */}
             <div className="mt-8 flex justify-end border-t border-slate-200 dark:border-slate-700 pt-4">
               <button
                 onClick={() => setIsTutorial1ModalOpen(false)}
@@ -732,7 +722,7 @@ const ScheduleTable = () => {
         </div>
       )}
 
-      {/* MODAL AMPLIO: TUTORIAL 2 (ROBERTO GÓMEZ CÁRDENAS) */}
+      {/* MODAL AMPLIO: TUTORIAL 2 (ROBERTO GÓMEZ CÁRDENAS) - TRADUCIDO AL INGLÉS */}
       {isTutorial2ModalOpen && (
         <div 
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 animate-fadeIn"
@@ -742,6 +732,7 @@ const ScheduleTable = () => {
             className="bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 rounded-xl shadow-2xl max-w-3xl w-full p-6 sm:p-8 relative border border-slate-200 dark:border-slate-700 max-h-[85vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
+            {/* Botón X superior para cerrar */}
             <button
               onClick={() => setIsTutorial2ModalOpen(false)}
               className="absolute top-4 right-4 text-slate-400 hover:text-slate-700 dark:hover:text-white text-xl font-bold w-8 h-8 flex items-center justify-center rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
@@ -749,85 +740,92 @@ const ScheduleTable = () => {
               &times;
             </button>
 
+            {/* Encabezado del Pop-up traducido */}
             <div className="mb-6 border-b border-slate-200 dark:border-slate-700 pb-4">
               <span className="text-xs font-bold uppercase tracking-wider text-[#005BC5] dark:text-sky-400 block mb-1">
                 Tutorial 2
               </span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-[#001449] dark:text-white leading-tight">
-                Introducción a la criptografía pre-cuántica
+                Introduction to Pre-Quantum Cryptography
               </h2>
               <p className="text-sm font-semibold text-slate-600 dark:text-slate-300 mt-2">
                 Instructor: <span className="text-[#005BC5] dark:text-sky-400 font-bold">Roberto Gómez Cárdenas</span>
               </p>
             </div>
 
+            {/* Cuerpo del contenido en Inglés */}
             <div className="space-y-6 text-xs sm:text-sm text-slate-700 dark:text-slate-200 leading-relaxed">
               
+              {/* Abstract */}
               <div>
                 <h3 className="text-sm font-bold text-[#001449] dark:text-white uppercase tracking-wider mb-2">
                   Abstract
                 </h3>
                 <p className="text-justify">
-                  La criptografía es uno de los pilares fundamentales de la seguridad de la información y un componente esencial para proteger los activos digitales de las organizaciones. Su aplicación permite garantizar la confidencialidad, integridad y autenticidad de la información, constituyendo la base de numerosos mecanismos de seguridad utilizados diariamente, como el cifrado de datos, las comunicaciones seguras y las firmas digitales.
+                  Cryptography is one of the fundamental pillars of information security and an essential component for protecting organizational digital assets. Its application ensures the confidentiality, integrity, and authenticity of information, forming the foundation of numerous daily security mechanisms such as data encryption, secure communications, and digital signatures.
                 </p>
                 <p className="text-justify mt-2">
-                  En este tutorial abordaremos los principios fundamentales de la criptografía moderna y pondremos en práctica estos conceptos mediante herramientas de libre distribución que permitirán afianzar los conocimientos adquiridos. Analizaremos el funcionamiento del sistema criptográfico AES como representante de la criptografía simétrica, así como los fundamentos matemáticos de RSA, uno de los algoritmos de criptografía asimétrica más utilizados.
+                  In this tutorial, we will address the fundamental principles of modern cryptography and put these concepts into practice using open-source tools to reinforce the acquired knowledge. We will analyze the operation of the AES cryptosystem as a representative of symmetric cryptography, as well as the mathematical foundations of RSA, one of the most widely used asymmetric cryptography algorithms.
                 </p>
                 <p className="text-justify mt-2">
-                  Como complemento, se introducirá el concepto de esteganografía, explorando sus principales características y aplicaciones, y destacando las diferencias fundamentales entre ocultar información y cifrar información. Al finalizar el tutorial, los participantes comprenderán los conceptos básicos sobre los que se sustentan los mecanismos criptográficos modernos y habrán experimentado de manera práctica su aplicación en casos reales.
+                  Additionally, the concept of steganography will be introduced, exploring its main features and applications while highlighting the key differences between hiding information and encrypting information. By the end of the tutorial, participants will understand the core concepts underlying modern cryptographic mechanisms and experience their practical application in real-world scenarios.
                 </p>
               </div>
 
+              {/* Topics / Temario */}
               <div>
                 <h3 className="text-sm font-bold text-[#001449] dark:text-white uppercase tracking-wider mb-2">
-                  Temario
+                  Topics
                 </h3>
                 <ul className="list-disc pl-5 space-y-1">
-                  <li>Criptología, criptografía y criptoanálisis</li>
-                  <li>Los criptosistemas simétricos</li>
-                  <li>El criptosistema AES</li>
-                  <li>Práctica con Veracrypt</li>
-                  <li>Los criptosistemas asimétricos</li>
-                  <li>El criptosistema RSA</li>
-                  <li>Práctica con Kleopatra</li>
-                  <li>Esteganografía</li>
-                  <li>Uso de herramientas esteganográficas</li>
+                  <li>Cryptology, cryptography, and cryptanalysis</li>
+                  <li>Symmetric cryptosystems</li>
+                  <li>The AES cryptosystem</li>
+                  <li>Hands-on practice with VeraCrypt</li>
+                  <li>Asymmetric cryptosystems</li>
+                  <li>The RSA cryptosystem</li>
+                  <li>Hands-on practice with Kleopatra</li>
+                  <li>Steganography</li>
+                  <li>Use of steganographic tools</li>
                 </ul>
               </div>
 
+              {/* Audience */}
               <div>
                 <h3 className="text-sm font-bold text-[#001449] dark:text-white uppercase tracking-wider mb-2">
-                  Audiencia
+                  Audience
                 </h3>
                 <p className="text-justify">
-                  Dirigido a estudiantes, profesionales y entusiastas de la tecnología que deseen comprender cómo la criptografía protege la información en el mundo digital. El tutorial está diseñado para participantes sin experiencia previa en criptografía, combinando conceptos teóricos con ejercicios prácticos que facilitan la comprensión de los principales mecanismos de cifrado utilizados actualmente.
+                  Aimed at students, professionals, and technology enthusiasts who wish to understand how cryptography protects information in the digital world. The tutorial is designed for participants with no prior experience in cryptography, combining theoretical concepts with practical exercises that facilitate comprehension of the primary encryption mechanisms used today.
                 </p>
               </div>
 
+              {/* Speaker CV */}
               <div>
                 <h3 className="text-sm font-bold text-[#001449] dark:text-white uppercase tracking-wider mb-2">
-                  Semblanza del Instructor
+                  Instructor Bio
                 </h3>
                 <p className="text-justify">
-                  El Dr. Roberto Gómez Cárdenas es Director de Seguridad de la Información (CISO) de una institución financiera, donde encabeza la estrategia de ciberseguridad y el cumplimiento regulatorio ante la CNBV y Banxico. Cuenta con amplia experiencia liderando y participando en equipos de seguridad en bancos y casas de bolsa del sector financiero mexicano.
+                  Dr. Roberto Gómez Cárdenas is Chief Information Security Officer (CISO) at a financial institution, where he leads cybersecurity strategy and regulatory compliance before CNBV and Banxico. He possesses extensive experience leading and participating in security teams within banks and brokerage firms across the Mexican financial sector.
                 </p>
                 <p className="text-justify mt-2">
-                  Obtuvo el doctorado en Ciencias Computacionales por la Universidad de París 8, con investigación realizada en el INRIA-Rocquencourt, Francia. Fue profesor investigador en el Tecnológico de Monterrey, Campus Estado de México, donde dirigió tesis de maestría y doctorado en seguridad de la información y criptografía, y fue miembro del Sistema Nacional de Investigadores.
+                  He earned his Ph.D. in Computer Science from the University of Paris 8, conducting research at INRIA-Rocquencourt, France. He was a research professor at Tecnológico de Monterrey, Estado de México Campus, where he directed Master's and Ph.D. dissertations in information security and cryptography, and was a member of the National System of Researchers (SNI).
                 </p>
                 <p className="text-justify mt-2">
-                  Es autor de artículos académicos y de divulgación, conferencista en foros nacionales e internacionales y docente en programas de maestría y en el Diplomado en Gestión de la Seguridad de la Información, del cual es el coordinador académico.
+                  He is an author of academic and outreach articles, a speaker at national and international forums, and a professor in graduate programs as well as the Executive Diploma in Information Security Management, where he serves as academic coordinator.
                 </p>
               </div>
 
+              {/* Contact Information */}
               <div>
                 <h3 className="text-sm font-bold text-[#001449] dark:text-white uppercase tracking-wider mb-2">
-                  Datos de contacto
+                  Contact Information
                 </h3>
                 <div className="space-y-1">
-                  <p><strong>Correo 1:</strong> rogoca [at] gmail.com</p>
-                  <p><strong>Correo 2:</strong> rogomez [at] cryptomex.org</p>
+                  <p><strong>Email 1:</strong> rogoca [at] gmail.com</p>
+                  <p><strong>Email 2:</strong> rogomez [at] cryptomex.org</p>
                   <p>
-                    <strong>Página web:</strong>{" "}
+                    <strong>Website:</strong>{" "}
                     <a href="http://cryptomex.org" target="_blank" rel="noopener noreferrer" className="text-[#005BC5] hover:underline">
                       http://cryptomex.org
                     </a>
@@ -836,20 +834,21 @@ const ScheduleTable = () => {
                   <p>
                     <strong>LinkedIn:</strong>{" "}
                     <a href="https://www.linkedin.com/in/roberto-g%C3%B3mez-c%C3%A1rdenas-b2675126/" target="_blank" rel="noopener noreferrer" className="text-[#005BC5] hover:underline">
-                      Ver perfil de LinkedIn
+                      View LinkedIn Profile
                     </a>
                   </p>
                 </div>
               </div>
 
+              {/* Technical Requirements */}
               <div>
                 <h3 className="text-sm font-bold text-[#001449] dark:text-white uppercase tracking-wider mb-2">
-                  Requerimientos técnicos
+                  Technical Requirements
                 </h3>
-                <p className="mb-2">Equipo Windows con el siguiente software instalado:</p>
+                <p className="mb-2">Windows machine with the following software installed:</p>
                 <ul className="list-disc pl-5 space-y-1">
                   <li>
-                    <strong>Veracrypt:</strong>{" "}
+                    <strong>VeraCrypt:</strong>{" "}
                     <a href="https://veracrypt.io/en/Downloads.html" target="_blank" rel="noopener noreferrer" className="text-[#005BC5] hover:underline">
                       https://veracrypt.io/en/Downloads.html
                     </a>
@@ -860,10 +859,10 @@ const ScheduleTable = () => {
                       https://kleopatra.app/tools/kleopatra-download
                     </a>
                   </li>
+                  <li>
+                    Internet connection to download software and access websites.
+                  </li>
                 </ul>
-                <p className="mt-2 text-slate-600 dark:text-slate-300">
-                  Conexión a internet para bajar un aplicativo y acceder a páginas web.
-                </p>
               </div>
 
             </div>
